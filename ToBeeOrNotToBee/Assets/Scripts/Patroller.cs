@@ -8,7 +8,6 @@ public class Patroller : MonoBehaviour
     public int speed;
 
     public int waypointIndex;
-    private float dist;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +20,7 @@ public class Patroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        dist = Vector3.Distance(transform.position, waypoints[waypointIndex].position);
+        float dist = Vector3.Distance(transform.position, waypoints[waypointIndex].position);
         if(dist < 0.05f)
         {
             IncreaseIndex();
@@ -31,7 +30,7 @@ public class Patroller : MonoBehaviour
 
     void Patrol()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime / 10);
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
     void IncreaseIndex()
