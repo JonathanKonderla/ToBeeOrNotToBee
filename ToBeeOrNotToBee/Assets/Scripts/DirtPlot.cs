@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class DirtPlot : MonoBehaviour
 {
-    private enum State
+    private enum PlotState
     {
-        Empty, 
-        Growing, 
+        Empty,
+        Growing,
         Pick
     }
 
-    private State state;
+    private PlotState state;
 
     // Start is called before the first frame update
     void Start()
     {
-        state = State.Empty;
+        state = PlotState.Empty;
     }
 
     // Update is called once per frame
@@ -24,12 +24,27 @@ public class DirtPlot : MonoBehaviour
     {
         switch (state)
         {
-            case State.Empty:
+            case PlotState.Empty:
                 break;
-            case State.Growing:
+            case PlotState.Growing:
                 break;
-            case State.Pick:
+            case PlotState.Pick:
                 break;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        print("trigger");
+        if(state == PlotState.Empty && other.gameObject.CompareTag("Seed"))
+        {
+            GameObject plant = other.gameObject.transform.parent.gameObject;
+            Destroy(other.gameObject);
+            plant.GetComponent<Plant>().state = PlantState.Stem;
+            plant.GetComponent<Rigidbody>().isKinematic = true;
+            plant.transform.position = this.transform.position;
+            plant.transform.Find("Stem").gameObject.SetActive(true);
+            state = PlotState.Growing;
         }
     }
 }
