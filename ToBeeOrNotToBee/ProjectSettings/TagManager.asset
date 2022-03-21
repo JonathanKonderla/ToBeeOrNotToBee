@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Seed
   - Plant
+  - Plow
   layers:
   - Default
   - TransparentFX
