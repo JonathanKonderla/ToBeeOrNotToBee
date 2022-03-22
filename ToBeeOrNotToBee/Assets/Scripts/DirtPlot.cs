@@ -13,7 +13,6 @@ public class DirtPlot : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("trigger");
         if(isEmpty && isPlowed && other.gameObject.CompareTag("Seed"))
         {
             GameObject plant = other.gameObject.transform.parent.gameObject;
