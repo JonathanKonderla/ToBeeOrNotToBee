@@ -5,9 +5,9 @@ using UnityEngine;
 public class OpenBlueberryPanel : MonoBehaviour{
 
     public GameObject BlueberryPanel;
-    public void OpenBlueberryPanel(){
+    public void OpenPanel(){
       if (BlueberryPanel != null){ //Only open it panel exists
-        Panel.SetActive(true); //Open
+        BlueberryPanel.SetActive(true); //Open
       }
     }
 
