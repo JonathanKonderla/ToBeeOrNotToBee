@@ -19,7 +19,7 @@ public class Plant : MonoBehaviour
     public float growTime;
     private float remainingTime;
     public float value;
-    private float quality;
+    private float quality = 1;
 
     private void Awake()
     {
@@ -62,5 +62,15 @@ public class Plant : MonoBehaviour
         state = PlantState.Stem;
         GetComponent<Rigidbody>().isKinematic = true;
         stem.SetActive(true);
+    }
+
+    public void SellPlant()
+    {
+        Destroy(this);
+    }
+
+    public float GetValue()
+    {
+        return value * quality;
     }
 }

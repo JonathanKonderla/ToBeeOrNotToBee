@@ -467,4 +467,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   growTime: 10
-  value: 0
+  value: 10
