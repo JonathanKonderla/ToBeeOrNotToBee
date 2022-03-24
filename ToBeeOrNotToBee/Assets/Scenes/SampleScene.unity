@@ -1096,7 +1096,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232818781, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00063504523
+      value: 0.00010253635
       objectReference: {fileID: 0}
     - target: {fileID: 248811795, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
       propertyPath: m_IsActive
@@ -8723,7 +8723,7 @@ MonoBehaviour:
   m_Camera: {fileID: 1771703284}
   m_OriginBaseGameObject: {fileID: 1841698529}
   m_CameraFloorOffsetObject: {fileID: 1323690811}
-  m_RequestedTrackingOriginMode: 1
+  m_RequestedTrackingOriginMode: 2
   m_CameraYOffset: 1.1176
 --- !u!4 &1841698532
 Transform:
