@@ -6,6 +6,7 @@ public class Patroller : MonoBehaviour
 {
     public Transform[] waypoints;
     public int speed;
+    public float height = 1;
 
     public int waypointIndex;
 
@@ -13,14 +14,13 @@ public class Patroller : MonoBehaviour
     void Start()
     {
         waypointIndex = 0;
-        transform.LookAt(waypoints[waypointIndex].position);
-
+        //transform.LookAt(waypoints[waypointIndex].position);
     }
 
     // Update is called once per frame
     void Update()
     {
-        float dist = Vector3.Distance(transform.position, waypoints[waypointIndex].position);
+        float dist = Vector3.Distance(transform.position, waypoints[waypointIndex].position + new Vector3(0, height, 0));
         if(dist < 0.05f)
         {
             IncreaseIndex();
@@ -30,7 +30,9 @@ public class Patroller : MonoBehaviour
 
     void Patrol()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        Vector3 dir = Vector3.Normalize(waypoints[waypointIndex].position - transform.position + new Vector3(0, height, 0));
+        print(waypoints[waypointIndex].position);
+        transform.Translate(dir * speed * Time.deltaTime / 10);
     }
 
     void IncreaseIndex()
@@ -40,6 +42,6 @@ public class Patroller : MonoBehaviour
         {
             waypointIndex = 0;
         }
-        transform.LookAt(waypoints[waypointIndex].position);
+        //transform.LookAt(waypoints[waypointIndex].position);
     }
 }

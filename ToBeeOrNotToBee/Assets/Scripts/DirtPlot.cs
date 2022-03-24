@@ -5,7 +5,7 @@ using UnityEngine;
 public class DirtPlot : MonoBehaviour
 {
     private bool isEmpty = true;
-    private bool isPlowed = false;
+    public bool isPlowed = false;
 
     public Material unplowedMat;
     public Material plowedMat;
@@ -25,6 +25,14 @@ public class DirtPlot : MonoBehaviour
         {
             isPlowed = true;
             GetComponent<MeshRenderer>().material = plowedMat;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Fruit"))
+        {
+            other.gameObject.transform.parent.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         }
     }
 }
