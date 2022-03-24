@@ -31,7 +31,6 @@ public class Patroller : MonoBehaviour
     void Patrol()
     {
         Vector3 dir = Vector3.Normalize(waypoints[waypointIndex].position - transform.position + new Vector3(0, height, 0));
-        print(waypoints[waypointIndex].position);
         transform.Translate(dir * speed * Time.deltaTime / 10);
     }
 
