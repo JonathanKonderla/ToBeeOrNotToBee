@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: -124}
+  m_AnchoredPosition: {x: -1.699997, y: -124}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &15539753
@@ -90,7 +90,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cab2d006c1cd4de98780c70fb3387ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 7653354218414983211}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
   NaturalPesticidePanel: {fileID: 3183399396754451363}
+  IsOpen: 0
 --- !u!114 &15539751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,7 +326,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 83}
+  m_AnchoredPosition: {x: -0, y: 84.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &168199646
@@ -372,6 +380,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StrawberryPanel: {fileID: 4003131907032554199}
+  BlueberryPanel: {fileID: 9207605409917977834}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
+  IsOpen: 0
 --- !u!114 &168199644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,7 +619,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00000089570415, y: -0.00055421004}
+  m_AnchoredPosition: {x: -0.00000089570415, y: 0.00007203221}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &262619408
@@ -696,7 +712,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d7f2973499234253bf6b379775a9f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
   ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
+  IsOpen: 0
 --- !u!114 &262619410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -951,7 +975,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467300874}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.775}
+  m_LocalPosition: {x: 0, y: 0, z: 0.25}
   m_LocalScale: {x: 0.0020360535, y: 0.0020360514, z: 0.0020360537}
   m_Children:
   - {fileID: 2083808253}
@@ -969,7 +993,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.158, y: 2.189}
+  m_AnchoredPosition: {x: 0, y: 2.3}
   m_SizeDelta: {x: 904, y: 520}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &467300877
@@ -1142,7 +1166,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25525ed9e3c3c4352845df94a5489cb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
   SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
+  IsOpen: 0
 --- !u!114 &556618781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1236,7 +1268,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -139, y: 49}
+  m_AnchoredPosition: {x: -139, y: 49.9}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &624519024
@@ -1289,7 +1321,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44ed2005bc5c4d17af37281b2d45ada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
   RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
+  IsOpen: 0
 --- !u!114 &624519022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1735,7 +1775,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7647f19ff9e734564a2ad8c0251e8fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
   AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
+  IsOpen: 0
 --- !u!114 &1155664387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1829,7 +1877,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -90}
+  m_AnchoredPosition: {x: -0.69999695, y: -90}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1188877217
@@ -1882,7 +1930,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5412210cb5804896a8c97464ad2b86a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
   PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
+  IsOpen: 0
 --- !u!114 &1188877215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2327,9 +2383,9 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 29, y: 6}
-  m_SizeDelta: {x: 25, y: -17}
+  m_SizeDelta: {x: 25, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &1884192574
 CanvasRenderer:
@@ -2412,7 +2468,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 836906260}
   m_HandleRect: {fileID: 836906259}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2750,7 +2806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055044b551568454fbe953ddd18a115f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game_object_5: {fileID: 568863336787562192}
+  display_aster: {fileID: 2060320856}
   aster_text: {fileID: 896693996603921668}
 --- !u!114 &8702023589573705363
 MonoBehaviour:
@@ -2825,7 +2881,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2723868821312814467
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2975,7 +3031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c3991244c1e428db5129f06573d91b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game_object_7: {fileID: 803665525879108958}
+  display_naturalpesticide: {fileID: 2060320856}
   natural_pesticide_text: {fileID: 896693996603921668}
 --- !u!114 &752154347761166927
 MonoBehaviour:
@@ -3129,7 +3185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3572078310165466350
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3285,7 +3341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3829942173877466997
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3686,7 +3742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc87d2196227d4a93b9199ac219cce4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game_object_3: {fileID: 2013332832741491689}
+  display_sunflower: {fileID: 2060320856}
   sunflower_text: {fileID: 896693996603921668}
 --- !u!114 &5695855835581180792
 MonoBehaviour:
@@ -3835,6 +3891,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
+  IsOpen: 0
 --- !u!114 &6992687729911233569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4060,7 +4124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3350d7228ed4cc58e81739e2d389e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game_object: {fileID: 2555817290667663654}
+  display_blueberry: {fileID: 2060320856}
   blueberry_text: {fileID: 896693996603921668}
 --- !u!114 &8407430033534700955
 MonoBehaviour:
@@ -4135,7 +4199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6996813533425894424
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4346,7 +4410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7877868536272811270
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4496,7 +4560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec1850399102844819f4de71d70b113c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game_object_1: {fileID: 3493683856516974279}
+  display_strawberry: {fileID: 2060320856}
   strawberry_text: {fileID: 896693996603921668}
 --- !u!114 &2007374072837549447
 MonoBehaviour:
@@ -4644,7 +4708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba14472aee33d4aef9dbc1945de4e285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game_object_2: {fileID: 3553660351779233135}
+  display_raspberry: {fileID: 2060320856}
   raspberry_text: {fileID: 896693996603921668}
 --- !u!114 &7082766849275106361
 MonoBehaviour:
@@ -4729,7 +4793,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3610125288142581947}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.69}
+  m_LocalPosition: {x: 0, y: 0, z: 0.25}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
   - {fileID: 3610125289599611590}
@@ -4896,7 +4960,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 043179ce312369743ae686d80f77ec26, type: 2}
+  - {fileID: 2100000, guid: 273869d15675afa4295cf832e967c3a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4965,7 +5029,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 33, y: -39}
+  m_AnchoredPosition: {x: 0, y: -39}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3610125289463261499
@@ -4996,7 +5060,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: UI Interaction
+  m_text: 'Stall Area
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5157,7 +5223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3315092351290691241
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5702,6 +5768,7 @@ GameObject:
   - component: {fileID: 5647289671638146399}
   - component: {fileID: 5284539208079849058}
   - component: {fileID: 896693996603921668}
+  - component: {fileID: 2060320856}
   m_Layer: 5
   m_Name: MoneyDisplay
   m_TagString: Untagged
@@ -5717,7 +5784,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6824737597721083623}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 467300878}
@@ -5725,8 +5792,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 38, y: 238}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 47, y: 234}
+  m_SizeDelta: {x: 500, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5284539208079849058
 CanvasRenderer:
@@ -5769,7 +5836,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Money:'
+  m_Text: 
+--- !u!114 &2060320856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6824737597721083623}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726c810cbadf54df7aa9f32b0bbf8e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player_money: 100
+  money_text: {fileID: 896693996603921668}
 --- !u!1 &7300633156511522664
 GameObject:
   m_ObjectHideFlags: 0
@@ -5860,7 +5941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18d978de1e6724c1f90907cd0711c506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game_object_4: {fileID: 7300633156511522664}
+  display_zinnia: {fileID: 2060320856}
   zinnia_text: {fileID: 896693996603921668}
 --- !u!114 &3069712987228070538
 MonoBehaviour:
@@ -6087,7 +6168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4825b791fd0e74d9086c6691dfe84aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game_object_6: {fileID: 7581958782389471350}
+  display_pesticide: {fileID: 2060320856}
   pesticide_text: {fileID: 896693996603921668}
 --- !u!114 &5006494244462052311
 MonoBehaviour:
@@ -6162,7 +6243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5577194690786949997
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6476,7 +6557,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8695915806469294502
 RectTransform:
   m_ObjectHideFlags: 0
