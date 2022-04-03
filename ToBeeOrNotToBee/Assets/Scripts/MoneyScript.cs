@@ -5,13 +5,12 @@ using UnityEngine.UI;
 //Referenced: https://www.youtube.com/watch?v=XJlPF4GtydU
 public class MoneyScript : MonoBehaviour {
     public int player_money; //Amount of money that the player has
-    public Text money_text;
+    public Text money_text; //Text to display
 
     // Start is called before the first frame update
     void Start(){
-      //Amount of money the player starts with
-      player_money = 100; //Can change this later
-      money_text.text = "Money Remaining: " + player_money.ToString();//Initial display
+      player_money = 100; //Amount of money the player starts with = $100
+      money_text.text = "Money Remaining: $" + player_money.ToString();//Initial display of money Money: $100
     }
 
     // Update is called once per frame
@@ -26,7 +25,7 @@ public class MoneyScript : MonoBehaviour {
     public void Sub_Money(int money_to_sub){ //Call this later
       if (player_money - money_to_sub >= 0){ //No negative money allowed
         player_money = player_money - money_to_sub; //Subtract the money
-        money_text.text = "Money Remaining: " + player_money.ToString();
+        money_text.text = "Money Remaining: $" + player_money.ToString();
       }
 
     }
