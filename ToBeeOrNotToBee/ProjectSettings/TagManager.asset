@@ -8,6 +8,7 @@ TagManager:
   - Plant
   - Plow
   - Fruit
+  - Stem
   layers:
   - Default
   - TransparentFX
