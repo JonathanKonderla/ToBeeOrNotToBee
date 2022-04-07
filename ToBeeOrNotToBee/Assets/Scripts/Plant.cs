@@ -81,7 +81,6 @@ public class Plant : MonoBehaviour
                 timer.material.color = Color.Lerp(green, red, remainingTime / growTime);
                 if (hasBugs)
                     quality -= Time.deltaTime * 0.01f;
-                print(quality);
                 if (remainingTime < 0)
                 {
                     state = PlantState.Fruit;
