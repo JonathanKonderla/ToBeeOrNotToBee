@@ -5,6 +5,7 @@ using UnityEngine;
 public class Patroller : MonoBehaviour
 {
     public Transform[] waypoints;
+    public GameObject[] active_plants;
     public int speed;
     public float height = 1;
 
@@ -13,8 +14,9 @@ public class Patroller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        FindPlants();
         waypointIndex = 0;
-        //transform.LookAt(waypoints[waypointIndex].position);
+        transform.LookAt(waypoints[waypointIndex].position);
     }
 
     // Update is called once per frame
@@ -26,6 +28,7 @@ public class Patroller : MonoBehaviour
             IncreaseIndex();
         }
         Patrol();
+        FindPlants();
     }
 
     void Patrol()
@@ -41,6 +44,20 @@ public class Patroller : MonoBehaviour
         {
             waypointIndex = 0;
         }
-        //transform.LookAt(waypoints[waypointIndex].position);
+        transform.LookAt(waypoints[waypointIndex].position);
+    }
+
+    void FindPlants()
+    {
+        active_plants = GameObject.FindGameObjectsWithTag("Stem");
+        if (active_plants.Length != 0)
+        {
+            waypoints = new Transform[active_plants.Length];
+
+            for (int i = 0; i < active_plants.Length; i++)
+            {
+                waypoints[i] = active_plants[i].transform;
+            }
+        }
     }
 }
