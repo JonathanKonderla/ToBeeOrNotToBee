@@ -8,6 +8,6 @@ public class BuyNaturalPesticide : MonoBehaviour{
   public Text natural_pesticide_text;
 
   public void UpdateDisplayPesticide(){ //This will update the money
-    display_naturalpesticide.Sub_Money(12); //Subtract the money by 12
+    display_naturalpesticide.Sub_Money(11); //Subtract the money by 11
 }
 }

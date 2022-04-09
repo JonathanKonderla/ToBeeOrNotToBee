@@ -7,6 +7,6 @@ public class BuyPesticide : MonoBehaviour{
   public Text pesticide_text;
 
   public void UpdateDisplayPesticide(){ //This will update the money
-    display_pesticide.Sub_Money(10); //Subtract the money by 10
+    display_pesticide.Sub_Money(8); //Subtract the money by 10
 }
 }

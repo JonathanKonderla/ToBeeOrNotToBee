@@ -209,6 +209,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &754715431 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2138309970818460820, guid: a3414a3e7e94e454e8eafbae636b258f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1423140213}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb43daa462d3434ba690bbc191559d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &870806542
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232818781, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.4881067
+      value: 0.0010717302
       objectReference: {fileID: 0}
     - target: {fileID: 262619409, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -490,6 +502,10 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.1764706
       objectReference: {fileID: 0}
+    - target: {fileID: 1303896655, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
+      propertyPath: m_text
+      value: Organic Pesticides
+      objectReference: {fileID: 0}
     - target: {fileID: 26920481520511922, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -509,6 +525,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 176447408690778141, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 176447408690778141, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 176447408690778141, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 754715431}
+    - target: {fileID: 176447408690778141, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 176447408690778141, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ClosePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 176447408690778141, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ClosePesticidePanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 176447408690778141, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 268134474828441408, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
@@ -615,6 +666,46 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 1051737155879848632, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: "Aster seeds \n\nCost: $2\nGermination Time: \n~ 2 weeks\nImage"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067609994358912366, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067609994358912366, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067609994358912366, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067609994358912366, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067609994358912366, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067609994358912366, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067609994358912366, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -100
+      objectReference: {fileID: 0}
     - target: {fileID: 1248029453511631524, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -634,6 +725,24 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384752978124158505, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Pesticides
+
+        Remove weeds
+
+        and insects
+
+
+        Cost:
+        $8'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1463844358517254938, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: "Blueberry seeds \n\nCost: $4\nGermination time: \n6 to 12 weeks\n\nImage"
       objectReference: {fileID: 0}
     - target: {fileID: 1463844358517254938, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
@@ -670,6 +779,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 1774918102468120564, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: "Sunflower seeds \n\nCost: $2\nGermination Time:\n1 to 2 weeks\n\nImage"
+      objectReference: {fileID: 0}
     - target: {fileID: 1882974159274543447, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -690,6 +804,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2138309970818460820, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: InsufficientFundsPanel
+      value: 
+      objectReference: {fileID: 1688300096}
     - target: {fileID: 2551481320094356082, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -910,6 +1029,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.24705882
       objectReference: {fileID: 0}
+    - target: {fileID: 3783971512943097660, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: "Zinnia seeds \n\nCost: $2\nGermination Time:\n~ 1 week\n\nImage"
+      objectReference: {fileID: 0}
     - target: {fileID: 3829942173877466997, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -995,6 +1119,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 5104637031713211274, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: Close
+      objectReference: {fileID: 0}
     - target: {fileID: 5558056557743334015, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_Color.b
@@ -1040,6 +1169,36 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 5892440063171052526, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -722
+      objectReference: {fileID: 0}
+    - target: {fileID: 5892440063171052526, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -317
+      objectReference: {fileID: 0}
+    - target: {fileID: 5892440063171052526, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 253
+      objectReference: {fileID: 0}
+    - target: {fileID: 5892440063171052526, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310571162820755273, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: checkMoney
+      value: 
+      objectReference: {fileID: 1971766689}
+    - target: {fileID: 6310571162820755273, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: InsufficientFundsPanel
+      value: 
+      objectReference: {fileID: 1688300096}
     - target: {fileID: 6631239448304145010, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1110,6 +1269,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -5
       objectReference: {fileID: 0}
+    - target: {fileID: 7021325826868321254, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: "Insufficient Funds to purchase item\n\nPlease select \nanother item
+        to purchase or gain more funds"
+      objectReference: {fileID: 0}
     - target: {fileID: 7330236003982066132, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1144,6 +1309,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706418411788937510, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: "Raspberry seeds \n\nCost: $4\nGermination Time:\n4 to 6 weeks \nImage"
       objectReference: {fileID: 0}
     - target: {fileID: 7825667881041663329, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
@@ -1185,22 +1355,56 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -5
       objectReference: {fileID: 0}
+    - target: {fileID: 7993966055884486887, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Name
+      value: ClosePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219959091863544151, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Organic Pesticides
+
+        Remove weeds
+
+        and insects
+
+
+        Cost:
+        $11'
+      objectReference: {fileID: 0}
     - target: {fileID: 8409983012645300289, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_Color.b
       value: 0.24705882
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585524531580713296, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: "Strawberry seeds \n\nCost: $4\nGermination time:\n1 to 6 weeks\nImage"
       objectReference: {fileID: 0}
     - target: {fileID: 8695915806469294502, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 253
       objectReference: {fileID: 0}
+    - target: {fileID: 8794321549791017737, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Name
+      value: InsufficientFundsPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8794321549791017737, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9207605409917977834, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2977149062903536388, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
 --- !u!1 &1616963428
 GameObject:
@@ -1295,6 +1499,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1688300096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8794321549791017737, guid: a3414a3e7e94e454e8eafbae636b258f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1423140213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1971766689 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2060320856, guid: a3414a3e7e94e454e8eafbae636b258f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1423140213}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726c810cbadf54df7aa9f32b0bbf8e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2060320853 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 896693996603921668, guid: a3414a3e7e94e454e8eafbae636b258f,

@@ -8,6 +8,6 @@ public class BuyBlueberry : MonoBehaviour{
   public Text blueberry_text; //Text to Display
 
   public void UpdateDisplayBlueberry(){ //This will update the money
-    display_blueberry.Sub_Money(5); //Subtract the money by 5
+    display_blueberry.Sub_Money(4); //Subtract the money by 5
   }
 }

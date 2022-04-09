@@ -8,6 +8,6 @@ public class BuyRaspberry : MonoBehaviour{
   public Text raspberry_text;
 
   public void UpdateDisplayRaspberry(){ //This will update the money
-    display_raspberry.Sub_Money(7); //Subtract the money by 7
+    display_raspberry.Sub_Money(4); //Subtract the money by 7
   }
 }
