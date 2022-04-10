@@ -11,8 +11,8 @@ public class OpenZinniaPanel : MonoBehaviour{
   public GameObject AsterPanel;
   public GameObject PesticidePanel;
   public GameObject NaturalPesticidePanel;
-  public bool IsOpen = false; //Not open, yet
 
+  public bool IsOpen = false; //Not open, yet
   public void OpenPanelZinnia(){
     if (ZinniaPanel != null){ //Only open it panel exists
       ZinniaPanel.SetActive(true); //Open

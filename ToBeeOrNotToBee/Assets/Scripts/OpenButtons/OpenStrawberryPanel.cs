@@ -11,9 +11,8 @@ public class OpenStrawberryPanel : MonoBehaviour{
   public GameObject AsterPanel;
   public GameObject PesticidePanel;
   public GameObject NaturalPesticidePanel;
+
   public bool IsOpen = false;
-
-
   public void OpenPanelStrawberry(){
     if (StrawberryPanel != null){ //Only open it panel exists
       StrawberryPanel.SetActive(true); //Open

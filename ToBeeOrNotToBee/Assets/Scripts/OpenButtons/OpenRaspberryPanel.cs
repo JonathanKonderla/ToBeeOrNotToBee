@@ -11,8 +11,8 @@ public class OpenRaspberryPanel : MonoBehaviour{
   public GameObject AsterPanel;
   public GameObject PesticidePanel;
   public GameObject NaturalPesticidePanel;
-  public bool IsOpen = false;
 
+  public bool IsOpen = false;
   public void OpenPanelRaspberry(){
     if (RaspberryPanel != null){ //Only open it panel exists
       RaspberryPanel.SetActive(true); //Open

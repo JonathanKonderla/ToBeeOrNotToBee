@@ -11,8 +11,8 @@ public class OpenSunflowerPanel : MonoBehaviour{
   public GameObject AsterPanel;
   public GameObject PesticidePanel;
   public GameObject NaturalPesticidePanel;
-  public bool IsOpen = false; //Not open originally
 
+  public bool IsOpen = false; //Not open originally
   public void OpenPanelSunflower(){
     if (SunflowerPanel != null){ //Only open it panel exists
       SunflowerPanel.SetActive(true); //Open

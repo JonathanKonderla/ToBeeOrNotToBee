@@ -12,9 +12,6 @@ public class OpenBlueberryPanel : MonoBehaviour{
     public GameObject AsterPanel;
     public GameObject PesticidePanel;
     public GameObject NaturalPesticidePanel;
-    //
-    public GameObject InsufficientFundsPanel;
-    public MoneyScript checkMoney;
 
     public bool IsOpen = false; //Check whether the panel is open
     public void OpenPanelBlueberry(){
@@ -33,19 +30,6 @@ public class OpenBlueberryPanel : MonoBehaviour{
         NaturalPesticidePanel.SetActive(false);
         IsOpen = false;
       }
-      //
-    if (checkMoney.player_money == 0){
-      InsufficientFundsPanel.SetActive(true);
-      BlueberryPanel.SetActive(false);
-      StrawberryPanel.SetActive(false); //So, don't overlap it
-      RaspberryPanel.SetActive(false);
-      SunflowerPanel.SetActive(false);
-      ZinniaPanel.SetActive(false);
-      AsterPanel.SetActive(false);
-      PesticidePanel.SetActive(false);
-      NaturalPesticidePanel.SetActive(false);
-      IsOpen = false;
-    }
     }
     //
 }
