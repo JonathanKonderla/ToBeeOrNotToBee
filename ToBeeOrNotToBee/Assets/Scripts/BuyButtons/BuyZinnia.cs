@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 public class BuyZinnia : MonoBehaviour{
   public MoneyScript display_zinnia; //GameObject
-  public Text zinnia_text;
   public GameObject InsufficientFundsPanel;
   public GameObject BlueberryPanel;
   public GameObject StrawberryPanel;

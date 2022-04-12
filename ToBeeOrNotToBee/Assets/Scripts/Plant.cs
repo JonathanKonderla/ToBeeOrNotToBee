@@ -4,8 +4,8 @@ using UnityEngine;
 
 public enum PlantState
 {
-    Seed, 
-    Stem, 
+    Seed,
+    Stem,
     Fruit
 }
 
@@ -25,7 +25,7 @@ public class Plant : MonoBehaviour
     private float remainingTime;
     public float value;
     private float quality = 1;
-    
+
     private bool hasWeeds;
     private bool hasBugs = false;
     private float bugChance = 0.1f;
@@ -104,8 +104,7 @@ public class Plant : MonoBehaviour
         InvokeRepeating("BugChance", 0, 1);
     }
 
-    public float SellPlant()
-    {
+    public float SellPlant(){
         Destroy(this);
         return GetValue();
     }

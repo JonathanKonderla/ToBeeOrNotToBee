@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 public class BuyPesticide : MonoBehaviour{
   public MoneyScript display_pesticide; //GameObject
-  public Text pesticide_text;
   public GameObject InsufficientFundsPanel;
   public GameObject BlueberryPanel;
   public GameObject StrawberryPanel;

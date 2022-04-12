@@ -406,7 +406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232818781, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00008011116
+      value: 0.000054482705
       objectReference: {fileID: 0}
     - target: {fileID: 262619409, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -547,6 +547,10 @@ PrefabInstance:
     - target: {fileID: 1303896655, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
       propertyPath: m_text
       value: Organic Pesticides
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060320856, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
+      propertyPath: player_money
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 26920481520511922, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}

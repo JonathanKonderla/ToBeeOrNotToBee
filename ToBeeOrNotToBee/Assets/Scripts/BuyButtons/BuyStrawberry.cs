@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 public class BuyStrawberry : MonoBehaviour{
   public MoneyScript display_strawberry; //GameObject
-  public Text strawberry_text;
   public GameObject InsufficientFundsPanel;
   public GameObject BlueberryPanel;
   public GameObject StrawberryPanel;

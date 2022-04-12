@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class BuyRaspberry : MonoBehaviour{
   public MoneyScript display_raspberry; //GameObject
-  public Text raspberry_text;
   public GameObject InsufficientFundsPanel;
   public GameObject BlueberryPanel;
   public GameObject StrawberryPanel;

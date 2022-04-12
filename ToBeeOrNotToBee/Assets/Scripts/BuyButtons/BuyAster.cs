@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class BuyAster : MonoBehaviour{
   public MoneyScript display_aster; //GameObject
-  public Text aster_text;
   public GameObject InsufficientFundsPanel;
   public GameObject BlueberryPanel;
   public GameObject StrawberryPanel;

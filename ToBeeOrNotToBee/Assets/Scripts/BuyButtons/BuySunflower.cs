@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class BuySunflower : MonoBehaviour{
   public MoneyScript display_sunflower; //GameObject
-  public Text sunflower_text;
   public GameObject InsufficientFundsPanel;
   public GameObject BlueberryPanel;
   public GameObject StrawberryPanel;

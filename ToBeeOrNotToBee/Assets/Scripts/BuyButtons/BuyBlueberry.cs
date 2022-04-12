@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class BuyBlueberry : MonoBehaviour{
   public MoneyScript display_blueberry; //GameObject
-  public Text blueberry_text; //Text to Display
   public GameObject InsufficientFundsPanel;
   public GameObject BlueberryPanel;
   public GameObject StrawberryPanel;
