@@ -12,13 +12,14 @@ public class BeeLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        bee_level = 20;
         bee_level_text.text = "Bee Level: " + bee_level.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        bee_level_text.text = "Bee Level: " + bee_level.ToString();
     }
 
     public void Increase_Bees()
