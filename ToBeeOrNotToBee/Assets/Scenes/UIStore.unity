@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &23557068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8257461171836879696, guid: a3414a3e7e94e454e8eafbae636b258f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1423140213}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &24976457 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3284298498250202231, guid: a3414a3e7e94e454e8eafbae636b258f,
@@ -512,6 +518,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -195
       objectReference: {fileID: 0}
+    - target: {fileID: 1155664387, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenPanelAster
+      objectReference: {fileID: 0}
     - target: {fileID: 1155664388, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
       propertyPath: m_Color.b
       value: 0.1764706
@@ -663,6 +673,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 736374073701331467, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -722
+      objectReference: {fileID: 0}
+    - target: {fileID: 736374073701331467, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 253
+      objectReference: {fileID: 0}
     - target: {fileID: 859518254396753932, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -782,6 +802,11 @@ PrefabInstance:
         Cost:
         $8'
       objectReference: {fileID: 0}
+    - target: {fileID: 1386773805467234135, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -80
+      objectReference: {fileID: 0}
     - target: {fileID: 1463844358517254938, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_Text
@@ -891,7 +916,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 23557068}
     - target: {fileID: 2138309970818460820, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: InsufficientFundsPanel
@@ -1231,6 +1256,21 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
+      objectReference: {fileID: 23557068}
+    - target: {fileID: 4254553837817449836, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.6313726
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254553837817449836, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.24705882
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254553837817449836, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4612697850971770284, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
@@ -1416,7 +1456,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 23557068}
     - target: {fileID: 6310571162820755273, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: checkMoney
@@ -1471,7 +1511,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 23557068}
     - target: {fileID: 6631239448304145010, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1551,6 +1591,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7020012908106927944, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: "Insufficient Funds\n\nPlease gain more funds or \npurchase a different
+        item"
       objectReference: {fileID: 0}
     - target: {fileID: 7021325826868321254, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
@@ -1642,7 +1688,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 23557068}
     - target: {fileID: 7653354218414983211, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_IsActive
@@ -1697,7 +1743,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 23557068}
     - target: {fileID: 7825667881041663329, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1782,7 +1828,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 23557068}
     - target: {fileID: 7993966055884486887, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_Name
@@ -1851,7 +1897,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 23557068}
     - target: {fileID: 8585524531580713296, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_Text
