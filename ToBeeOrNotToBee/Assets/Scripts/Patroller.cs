@@ -17,10 +17,9 @@ public class Patroller : MonoBehaviour
     void Start()
     {
         //transform.LookAt(waypoints[waypointIndex].position);
-        speed = 1;
+        speed = 10;
         FindPlants();
         waypointIndex = 0;
-        hiveTransform = (GameObject.Find("Bee Hive")).transform;
     }
 
     // Update is called once per frame
