@@ -251,18 +251,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1423140213}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &754715431 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2138309970818460820, guid: a3414a3e7e94e454e8eafbae636b258f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1423140213}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fb43daa462d3434ba690bbc191559d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &870806542
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,7 +394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232818781, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000054482705
+      value: 0.000054934804
       objectReference: {fileID: 0}
     - target: {fileID: 262619409, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -508,6 +496,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 836906259, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1155664386, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -548,6 +540,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Organic Pesticides
       objectReference: {fileID: 0}
+    - target: {fileID: 1884192570, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2060320856, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
       propertyPath: player_money
       value: 30
@@ -586,7 +582,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 754715431}
+      objectReference: {fileID: 0}
     - target: {fileID: 176447408690778141, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -895,12 +891,12 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 2138309970818460820, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 2551481320094356082, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1235,7 +1231,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 4612697850971770284, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1270,7 +1266,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 5389534425140779857, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: checkMoney
@@ -1280,7 +1276,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 5558056557743334015, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_Color.b
@@ -1315,7 +1311,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 5762273053193006548, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1345,7 +1341,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 5892440063171052526, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -1375,7 +1371,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 6076510004592565075, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: AsterPanel
@@ -1420,7 +1416,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 6310571162820755273, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: checkMoney
@@ -1430,7 +1426,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 6566117506090019379, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: AsterPanel
@@ -1475,7 +1471,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 6631239448304145010, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1515,7 +1511,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 6752060466429482235, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1571,7 +1567,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 7330236003982066132, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1646,7 +1642,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 7653354218414983211, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_IsActive
@@ -1701,7 +1697,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 7825667881041663329, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1786,7 +1782,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 7993966055884486887, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_Name
@@ -1855,7 +1851,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InsufficientFundsPanel
       value: 
-      objectReference: {fileID: 1688300096}
+      objectReference: {fileID: 0}
     - target: {fileID: 8585524531580713296, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_Text
@@ -1977,12 +1973,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1688300096 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8794321549791017737, guid: a3414a3e7e94e454e8eafbae636b258f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1423140213}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1971766689 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2060320856, guid: a3414a3e7e94e454e8eafbae636b258f,
