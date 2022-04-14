@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 15539750}
   - component: {fileID: 15539753}
+  - component: {fileID: 8026550324273969215}
   - component: {fileID: 15539752}
-  - component: {fileID: 5389534425140779857}
   - component: {fileID: 15539751}
   m_Layer: 5
   m_Name: NaturalPesticideButton
@@ -33,7 +33,7 @@ RectTransform:
   m_Children:
   - {fileID: 1303896654}
   m_Father: {fileID: 232818781}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -48,6 +48,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15539749}
   m_CullTransparentMesh: 1
+--- !u!114 &8026550324273969215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15539749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e604fad3f33314ead9582bbd42813873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
+  IsOpen: 0
 --- !u!114 &15539752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,27 +99,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5389534425140779857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 15539749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cab2d006c1cd4de98780c70fb3387ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BlueberryPanel: {fileID: 9207605409917977834}
-  StrawberryPanel: {fileID: 7653354218414983211}
-  RaspberryPanel: {fileID: 7653354218414983211}
-  SunflowerPanel: {fileID: 869788629561318540}
-  ZinniaPanel: {fileID: 688431408571442647}
-  AsterPanel: {fileID: 3284298498250202231}
-  PesticidePanel: {fileID: 1376462677734442083}
-  NaturalPesticidePanel: {fileID: 3183399396754451363}
-  IsOpen: 0
 --- !u!114 &15539751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,8 +143,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5389534425140779857}
-        m_TargetAssemblyTypeName: OpenNaturalPesticidePanel, Assembly-CSharp
+      - m_Target: {fileID: 8026550324273969215}
+        m_TargetAssemblyTypeName: OpenAllPanels, Assembly-CSharp
         m_MethodName: OpenPanelNaturalPesticide
         m_Mode: 1
         m_Arguments:
@@ -299,8 +299,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168199643}
   - component: {fileID: 168199646}
+  - component: {fileID: 3864002923446657922}
   - component: {fileID: 168199645}
-  - component: {fileID: 5945716932010937497}
   - component: {fileID: 168199644}
   m_Layer: 5
   m_Name: StrawberryButton
@@ -337,6 +337,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168199642}
   m_CullTransparentMesh: 1
+--- !u!114 &3864002923446657922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168199642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e604fad3f33314ead9582bbd42813873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
+  IsOpen: 0
 --- !u!114 &168199645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,27 +388,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5945716932010937497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168199642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83ccbef4734ca427e8edab714456e51b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StrawberryPanel: {fileID: 4003131907032554199}
-  BlueberryPanel: {fileID: 9207605409917977834}
-  RaspberryPanel: {fileID: 7653354218414983211}
-  SunflowerPanel: {fileID: 869788629561318540}
-  ZinniaPanel: {fileID: 688431408571442647}
-  AsterPanel: {fileID: 3284298498250202231}
-  PesticidePanel: {fileID: 1376462677734442083}
-  NaturalPesticidePanel: {fileID: 3183399396754451363}
-  IsOpen: 0
 --- !u!114 &168199644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,8 +432,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5945716932010937497}
-        m_TargetAssemblyTypeName: OpenStrawberryPanel, Assembly-CSharp
+      - m_Target: {fileID: 3864002923446657922}
+        m_TargetAssemblyTypeName: OpenAllPanels, Assembly-CSharp
         m_MethodName: OpenPanelStrawberry
         m_Mode: 1
         m_Arguments:
@@ -612,14 +612,14 @@ RectTransform:
   - {fileID: 556618780}
   - {fileID: 262619409}
   - {fileID: 1155664386}
-  - {fileID: 1188877214}
   - {fileID: 15539750}
+  - {fileID: 1386773805467234135}
   m_Father: {fileID: 835874415}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00000089570415, y: 0.0004954568}
+  m_AnchoredPosition: {x: -0.00000089570415, y: 0.000040162868}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &262619408
@@ -632,8 +632,8 @@ GameObject:
   m_Component:
   - component: {fileID: 262619409}
   - component: {fileID: 262619412}
+  - component: {fileID: 6469543502294319540}
   - component: {fileID: 262619411}
-  - component: {fileID: 6727632128841247153}
   - component: {fileID: 262619410}
   m_Layer: 5
   m_Name: ZinniaButton
@@ -670,6 +670,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262619408}
   m_CullTransparentMesh: 1
+--- !u!114 &6469543502294319540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262619408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e604fad3f33314ead9582bbd42813873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
+  IsOpen: 0
 --- !u!114 &262619411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -700,27 +721,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6727632128841247153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 262619408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d7f2973499234253bf6b379775a9f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BlueberryPanel: {fileID: 9207605409917977834}
-  StrawberryPanel: {fileID: 4003131907032554199}
-  RaspberryPanel: {fileID: 7653354218414983211}
-  SunflowerPanel: {fileID: 869788629561318540}
-  ZinniaPanel: {fileID: 688431408571442647}
-  AsterPanel: {fileID: 3284298498250202231}
-  PesticidePanel: {fileID: 1376462677734442083}
-  NaturalPesticidePanel: {fileID: 3183399396754451363}
-  IsOpen: 0
 --- !u!114 &262619410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,8 +765,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6727632128841247153}
-        m_TargetAssemblyTypeName: OpenZinniaPanel, Assembly-CSharp
+      - m_Target: {fileID: 6469543502294319540}
+        m_TargetAssemblyTypeName: OpenAllPanels, Assembly-CSharp
         m_MethodName: OpenPanelZinnia
         m_Mode: 1
         m_Arguments:
@@ -988,6 +988,7 @@ RectTransform:
   - {fileID: 7877868536272811270}
   - {fileID: 3829942173877466997}
   - {fileID: 6996813533425894424}
+  - {fileID: 736374073701331467}
   m_Father: {fileID: 3610125288266481543}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -1086,8 +1087,8 @@ GameObject:
   m_Component:
   - component: {fileID: 556618780}
   - component: {fileID: 556618783}
+  - component: {fileID: 6811152603706162325}
   - component: {fileID: 556618782}
-  - component: {fileID: 5721652701123221553}
   - component: {fileID: 556618781}
   m_Layer: 5
   m_Name: SunflowerButton
@@ -1124,6 +1125,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556618779}
   m_CullTransparentMesh: 1
+--- !u!114 &6811152603706162325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556618779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e604fad3f33314ead9582bbd42813873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
+  IsOpen: 0
 --- !u!114 &556618782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1154,27 +1176,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5721652701123221553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556618779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25525ed9e3c3c4352845df94a5489cb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BlueberryPanel: {fileID: 9207605409917977834}
-  StrawberryPanel: {fileID: 4003131907032554199}
-  RaspberryPanel: {fileID: 7653354218414983211}
-  SunflowerPanel: {fileID: 869788629561318540}
-  ZinniaPanel: {fileID: 688431408571442647}
-  AsterPanel: {fileID: 3284298498250202231}
-  PesticidePanel: {fileID: 1376462677734442083}
-  NaturalPesticidePanel: {fileID: 3183399396754451363}
-  IsOpen: 0
 --- !u!114 &556618781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1219,8 +1220,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5721652701123221553}
-        m_TargetAssemblyTypeName: OpenSunflowerPanel, Assembly-CSharp
+      - m_Target: {fileID: 6811152603706162325}
+        m_TargetAssemblyTypeName: OpenAllPanels, Assembly-CSharp
         m_MethodName: OpenPanelSunflower
         m_Mode: 1
         m_Arguments:
@@ -1241,8 +1242,8 @@ GameObject:
   m_Component:
   - component: {fileID: 624519021}
   - component: {fileID: 624519024}
+  - component: {fileID: 1413736701154612505}
   - component: {fileID: 624519023}
-  - component: {fileID: 5797042392923335615}
   - component: {fileID: 624519022}
   m_Layer: 5
   m_Name: RaspberryButton
@@ -1279,6 +1280,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624519020}
   m_CullTransparentMesh: 1
+--- !u!114 &1413736701154612505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624519020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e604fad3f33314ead9582bbd42813873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
+  IsOpen: 0
 --- !u!114 &624519023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1309,27 +1331,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5797042392923335615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 624519020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e44ed2005bc5c4d17af37281b2d45ada, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BlueberryPanel: {fileID: 9207605409917977834}
-  StrawberryPanel: {fileID: 4003131907032554199}
-  RaspberryPanel: {fileID: 7653354218414983211}
-  SunflowerPanel: {fileID: 869788629561318540}
-  ZinniaPanel: {fileID: 688431408571442647}
-  AsterPanel: {fileID: 3284298498250202231}
-  PesticidePanel: {fileID: 1376462677734442083}
-  NaturalPesticidePanel: {fileID: 3183399396754451363}
-  IsOpen: 0
 --- !u!114 &624519022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1374,8 +1375,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5797042392923335615}
-        m_TargetAssemblyTypeName: OpenRaspberryPanel, Assembly-CSharp
+      - m_Target: {fileID: 1413736701154612505}
+        m_TargetAssemblyTypeName: OpenAllPanels, Assembly-CSharp
         m_MethodName: OpenPanelRaspberry
         m_Mode: 1
         m_Arguments:
@@ -1695,8 +1696,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1155664386}
   - component: {fileID: 1155664389}
+  - component: {fileID: 2864628105307578668}
   - component: {fileID: 1155664388}
-  - component: {fileID: 5166772467575681360}
   - component: {fileID: 1155664387}
   m_Layer: 5
   m_Name: AsterButton
@@ -1733,6 +1734,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155664385}
   m_CullTransparentMesh: 1
+--- !u!114 &2864628105307578668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155664385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e604fad3f33314ead9582bbd42813873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
+  IsOpen: 0
 --- !u!114 &1155664388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1763,27 +1785,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5166772467575681360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1155664385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7647f19ff9e734564a2ad8c0251e8fba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BlueberryPanel: {fileID: 9207605409917977834}
-  StrawberryPanel: {fileID: 4003131907032554199}
-  RaspberryPanel: {fileID: 7653354218414983211}
-  SunflowerPanel: {fileID: 869788629561318540}
-  ZinniaPanel: {fileID: 688431408571442647}
-  AsterPanel: {fileID: 3284298498250202231}
-  PesticidePanel: {fileID: 1376462677734442083}
-  NaturalPesticidePanel: {fileID: 3183399396754451363}
-  IsOpen: 0
 --- !u!114 &1155664387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1828,164 +1829,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5166772467575681360}
-        m_TargetAssemblyTypeName: OpenAsterPanel, Assembly-CSharp
-        m_MethodName: OpenPanelAster
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!1 &1188877213
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1188877214}
-  - component: {fileID: 1188877217}
-  - component: {fileID: 1188877216}
-  - component: {fileID: 7297468956145157842}
-  - component: {fileID: 1188877215}
-  m_Layer: 5
-  m_Name: PesticideButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1188877214
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188877213}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1831857423}
-  m_Father: {fileID: 232818781}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.69999695, y: -90}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1188877217
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188877213}
-  m_CullTransparentMesh: 1
---- !u!114 &1188877216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188877213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!114 &7297468956145157842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188877213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5412210cb5804896a8c97464ad2b86a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BlueberryPanel: {fileID: 9207605409917977834}
-  StrawberryPanel: {fileID: 4003131907032554199}
-  RaspberryPanel: {fileID: 7653354218414983211}
-  SunflowerPanel: {fileID: 869788629561318540}
-  ZinniaPanel: {fileID: 688431408571442647}
-  AsterPanel: {fileID: 3284298498250202231}
-  PesticidePanel: {fileID: 1376462677734442083}
-  NaturalPesticidePanel: {fileID: 3183399396754451363}
-  IsOpen: 0
---- !u!114 &1188877215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188877213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1188877216}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7297468956145157842}
-        m_TargetAssemblyTypeName: OpenPesticidePanel, Assembly-CSharp
-        m_MethodName: OpenPanelPesticide
+      - m_Target: {fileID: 2864628105307578668}
+        m_TargetAssemblyTypeName: OpenAllPanels, Assembly-CSharp
+        m_MethodName: OpenPanelZinnia
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2214,140 +2060,6 @@ MonoBehaviour:
 
 
 '
---- !u!1 &1831857422
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1831857423}
-  - component: {fileID: 1831857425}
-  - component: {fileID: 1831857424}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1831857423
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1831857422}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1188877214}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1831857425
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1831857422}
-  m_CullTransparentMesh: 1
---- !u!114 &1831857424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1831857422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Pesticides
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1884192570
 GameObject:
   m_ObjectHideFlags: 0
@@ -2468,8 +2180,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 836906260}
   m_HandleRect: {fileID: 836906259}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.9999568
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2807,15 +2519,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display_aster: {fileID: 2060320856}
-  InsufficientFundsPanel: {fileID: 0}
-  BlueberryPanel: {fileID: 0}
-  StrawberryPanel: {fileID: 0}
-  RaspberryPanel: {fileID: 0}
-  SunflowerPanel: {fileID: 0}
-  ZinniaPanel: {fileID: 0}
-  AsterPanel: {fileID: 0}
-  PesticidePanel: {fileID: 0}
-  NaturalPesticidePanel: {fileID: 0}
+  InsufficientFundsPanel: {fileID: 8257461171836879696}
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
 --- !u!114 &8702023589573705363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3040,15 +2752,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display_naturalpesticide: {fileID: 2060320856}
-  InsufficientFundsPanel: {fileID: 0}
-  BlueberryPanel: {fileID: 0}
-  StrawberryPanel: {fileID: 0}
-  RaspberryPanel: {fileID: 0}
-  SunflowerPanel: {fileID: 0}
-  ZinniaPanel: {fileID: 0}
-  AsterPanel: {fileID: 0}
-  PesticidePanel: {fileID: 0}
-  NaturalPesticidePanel: {fileID: 0}
+  InsufficientFundsPanel: {fileID: 8257461171836879696}
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
 --- !u!114 &752154347761166927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3261,6 +2973,91 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1104122527142901468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5189008776541024956}
+  - component: {fileID: 4960986537543112105}
+  - component: {fileID: 7020012908106927944}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5189008776541024956
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104122527142901468}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 736374073701331467}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 10, y: -0}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4960986537543112105
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104122527142901468}
+  m_CullTransparentMesh: 1
+--- !u!114 &7020012908106927944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104122527142901468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Insufficient Funds
+
+
+    Please gain more funds
+
+    or purchase a different
+    item'
 --- !u!1 &1194429525134850605
 GameObject:
   m_ObjectHideFlags: 0
@@ -3668,6 +3465,140 @@ MonoBehaviour:
 
 
     Cost: $10'
+--- !u!1 &1945101590083788527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 860041234021736292}
+  - component: {fileID: 9153254982623057728}
+  - component: {fileID: 5880154522081592010}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &860041234021736292
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945101590083788527}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1386773805467234135}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &9153254982623057728
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945101590083788527}
+  m_CullTransparentMesh: 1
+--- !u!114 &5880154522081592010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945101590083788527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Pesticides
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 14
+  m_fontSizeBase: 14
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &2013332832741491689
 GameObject:
   m_ObjectHideFlags: 0
@@ -3759,15 +3690,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display_sunflower: {fileID: 2060320856}
-  InsufficientFundsPanel: {fileID: 0}
-  BlueberryPanel: {fileID: 0}
-  StrawberryPanel: {fileID: 0}
-  RaspberryPanel: {fileID: 0}
-  SunflowerPanel: {fileID: 0}
-  ZinniaPanel: {fileID: 0}
-  AsterPanel: {fileID: 0}
-  PesticidePanel: {fileID: 0}
-  NaturalPesticidePanel: {fileID: 0}
+  InsufficientFundsPanel: {fileID: 8257461171836879696}
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
 --- !u!114 &5695855835581180792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3834,8 +3765,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6631239448304145010}
   - component: {fileID: 4011001673190506494}
+  - component: {fileID: 690361003374294630}
   - component: {fileID: 3404894624942977095}
-  - component: {fileID: 6310571162820755273}
   - component: {fileID: 6992687729911233569}
   m_Layer: 5
   m_Name: BlueberryButton
@@ -3872,6 +3803,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2327782949432500121}
   m_CullTransparentMesh: 1
+--- !u!114 &690361003374294630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2327782949432500121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e604fad3f33314ead9582bbd42813873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
+  IsOpen: 0
 --- !u!114 &3404894624942977095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3902,27 +3854,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6310571162820755273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2327782949432500121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4b434d1d2fac421f9ab0aaddb9fb866, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BlueberryPanel: {fileID: 9207605409917977834}
-  StrawberryPanel: {fileID: 4003131907032554199}
-  RaspberryPanel: {fileID: 7653354218414983211}
-  SunflowerPanel: {fileID: 869788629561318540}
-  ZinniaPanel: {fileID: 688431408571442647}
-  AsterPanel: {fileID: 3284298498250202231}
-  PesticidePanel: {fileID: 1376462677734442083}
-  NaturalPesticidePanel: {fileID: 3183399396754451363}
-  IsOpen: 0
 --- !u!114 &6992687729911233569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3967,8 +3898,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6310571162820755273}
-        m_TargetAssemblyTypeName: OpenBlueberryPanel, Assembly-CSharp
+      - m_Target: {fileID: 690361003374294630}
+        m_TargetAssemblyTypeName: OpenAllPanels, Assembly-CSharp
         m_MethodName: OpenPanelBlueberry
         m_Mode: 1
         m_Arguments:
@@ -4149,15 +4080,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display_blueberry: {fileID: 2060320856}
-  InsufficientFundsPanel: {fileID: 0}
-  BlueberryPanel: {fileID: 0}
-  StrawberryPanel: {fileID: 0}
-  RaspberryPanel: {fileID: 0}
-  SunflowerPanel: {fileID: 0}
-  ZinniaPanel: {fileID: 0}
-  AsterPanel: {fileID: 0}
-  PesticidePanel: {fileID: 0}
-  NaturalPesticidePanel: {fileID: 0}
+  InsufficientFundsPanel: {fileID: 8257461171836879696}
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
 --- !u!114 &8407430033534700955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4593,15 +4524,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display_strawberry: {fileID: 2060320856}
-  InsufficientFundsPanel: {fileID: 0}
-  BlueberryPanel: {fileID: 0}
-  StrawberryPanel: {fileID: 0}
-  RaspberryPanel: {fileID: 0}
-  SunflowerPanel: {fileID: 0}
-  ZinniaPanel: {fileID: 0}
-  AsterPanel: {fileID: 0}
-  PesticidePanel: {fileID: 0}
-  NaturalPesticidePanel: {fileID: 0}
+  InsufficientFundsPanel: {fileID: 8257461171836879696}
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
 --- !u!114 &2007374072837549447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4749,15 +4680,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display_raspberry: {fileID: 2060320856}
-  InsufficientFundsPanel: {fileID: 0}
-  BlueberryPanel: {fileID: 0}
-  StrawberryPanel: {fileID: 0}
-  RaspberryPanel: {fileID: 0}
-  SunflowerPanel: {fileID: 0}
-  ZinniaPanel: {fileID: 0}
-  AsterPanel: {fileID: 0}
-  PesticidePanel: {fileID: 0}
-  NaturalPesticidePanel: {fileID: 0}
+  InsufficientFundsPanel: {fileID: 8257461171836879696}
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
 --- !u!114 &7082766849275106361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5568,6 +5499,153 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Zinnia seeds \n\nCost: $2\nTime to Grow: \nImage"
+--- !u!1 &6427355531646215839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7873351842725062054}
+  - component: {fileID: 890257690917983597}
+  - component: {fileID: 4798309530115718841}
+  - component: {fileID: 1941015906332879077}
+  - component: {fileID: 533373226034205884}
+  m_Layer: 5
+  m_Name: Close
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7873351842725062054
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6427355531646215839}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2615742800689283318}
+  m_Father: {fileID: 736374073701331467}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3.9, y: -75}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &890257690917983597
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6427355531646215839}
+  m_CullTransparentMesh: 1
+--- !u!114 &4798309530115718841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6427355531646215839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1941015906332879077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6427355531646215839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb43daa462d3434ba690bbc191559d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel_to_close: {fileID: 8257461171836879696}
+--- !u!114 &533373226034205884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6427355531646215839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 4798309530115718841}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1941015906332879077}
+        m_TargetAssemblyTypeName: PanelClose, Assembly-CSharp
+        m_MethodName: ClosePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6521039189433093277
 GameObject:
   m_ObjectHideFlags: 0
@@ -5990,15 +6068,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display_zinnia: {fileID: 2060320856}
-  InsufficientFundsPanel: {fileID: 0}
-  BlueberryPanel: {fileID: 0}
-  StrawberryPanel: {fileID: 0}
-  RaspberryPanel: {fileID: 0}
-  SunflowerPanel: {fileID: 0}
-  ZinniaPanel: {fileID: 0}
-  AsterPanel: {fileID: 0}
-  PesticidePanel: {fileID: 0}
-  NaturalPesticidePanel: {fileID: 0}
+  InsufficientFundsPanel: {fileID: 8257461171836879696}
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
 --- !u!114 &3069712987228070538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6225,15 +6303,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display_pesticide: {fileID: 2060320856}
-  InsufficientFundsPanel: {fileID: 0}
-  BlueberryPanel: {fileID: 0}
-  StrawberryPanel: {fileID: 0}
-  RaspberryPanel: {fileID: 0}
-  SunflowerPanel: {fileID: 0}
-  ZinniaPanel: {fileID: 0}
-  AsterPanel: {fileID: 0}
-  PesticidePanel: {fileID: 0}
-  NaturalPesticidePanel: {fileID: 0}
+  InsufficientFundsPanel: {fileID: 8257461171836879696}
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
 --- !u!114 &5006494244462052311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6446,6 +6524,83 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Purchase
+--- !u!1 &8257461171836879696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 736374073701331467}
+  - component: {fileID: 4415444776967121626}
+  - component: {fileID: 4254553837817449836}
+  m_Layer: 5
+  m_Name: InsufficientFundsPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &736374073701331467
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8257461171836879696}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1.6102471, y: 1.6102474, z: 1.6102474}
+  m_Children:
+  - {fileID: 5189008776541024956}
+  - {fileID: 7873351842725062054}
+  m_Father: {fileID: 467300878}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 241, y: -5}
+  m_SizeDelta: {x: -722, y: -317}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4415444776967121626
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8257461171836879696}
+  m_CullTransparentMesh: 1
+--- !u!114 &4254553837817449836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8257461171836879696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6313726}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &8460920826020233874
 GameObject:
   m_ObjectHideFlags: 0
@@ -6525,6 +6680,240 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Purchase
+--- !u!1 &8463288178730265763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2615742800689283318}
+  - component: {fileID: 169733657622702272}
+  - component: {fileID: 173838917784318040}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2615742800689283318
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463288178730265763}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7873351842725062054}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &169733657622702272
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463288178730265763}
+  m_CullTransparentMesh: 1
+--- !u!114 &173838917784318040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463288178730265763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Close
+--- !u!1 &8779938144281868866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1386773805467234135}
+  - component: {fileID: 507968237976551522}
+  - component: {fileID: 2911290255641502492}
+  - component: {fileID: 8623491925427886000}
+  - component: {fileID: 1528342641926921136}
+  m_Layer: 5
+  m_Name: PesticideButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1386773805467234135
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779938144281868866}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 860041234021736292}
+  m_Father: {fileID: 232818781}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -100}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &507968237976551522
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779938144281868866}
+  m_CullTransparentMesh: 1
+--- !u!114 &2911290255641502492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779938144281868866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e604fad3f33314ead9582bbd42813873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueberryPanel: {fileID: 9207605409917977834}
+  StrawberryPanel: {fileID: 4003131907032554199}
+  RaspberryPanel: {fileID: 7653354218414983211}
+  SunflowerPanel: {fileID: 869788629561318540}
+  ZinniaPanel: {fileID: 688431408571442647}
+  AsterPanel: {fileID: 3284298498250202231}
+  PesticidePanel: {fileID: 1376462677734442083}
+  NaturalPesticidePanel: {fileID: 3183399396754451363}
+  IsOpen: 0
+--- !u!114 &8623491925427886000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779938144281868866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 0.1764706, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1528342641926921136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779938144281868866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 8623491925427886000}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2911290255641502492}
+        m_TargetAssemblyTypeName: OpenAllPanels, Assembly-CSharp
+        m_MethodName: OpenPanelPesticide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &9039239689706671480
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,7 +19,6 @@ public class BuyBlueberry : MonoBehaviour{
     display_blueberry.Sub_Money(4); //Subtract the money by 5
     if (display_blueberry.player_money < 4){ //Not enough money to purchase blueberry seeds
       InsufficientFundsPanel.SetActive(true); //Show InsufficientFundsPanel
-      InsufficientFundsPanel.SetActive(true);
       AsterPanel.SetActive(false);
       BlueberryPanel.SetActive(false);
       StrawberryPanel.SetActive(false);
