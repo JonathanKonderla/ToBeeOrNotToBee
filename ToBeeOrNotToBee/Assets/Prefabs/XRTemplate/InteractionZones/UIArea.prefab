@@ -619,7 +619,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00000089570415, y: 0.00012989758}
+  m_AnchoredPosition: {x: -0.00000089570415, y: 0.000054934804}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &262619408
@@ -3907,18 +3907,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameSystem, Assembly-CSharp
-        m_MethodName: SpawnSeed
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: blueberry
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &2379974351526815836
 GameObject:
   m_ObjectHideFlags: 0
@@ -4917,8 +4905,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.01, y: 1.242, z: -0.494}
   m_LocalScale: {x: 4, y: 1, z: 1}
-  m_Children:
-  - {fileID: 6243844102084712637}
+  m_Children: []
   m_Father: {fileID: 3610125288266481543}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6534,36 +6521,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Purchase
---- !u!1 &8116110483946787303
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6243844102084712637}
-  m_Layer: 0
-  m_Name: StallTop
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6243844102084712637
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8116110483946787303}
-  m_LocalRotation: {x: -0, y: 0.05156902, z: -0, w: 0.99866945}
-  m_LocalPosition: {x: -0.22053757, y: 0.548, z: 0.014340788}
-  m_LocalScale: {x: 0.5040103, y: 2, z: 1.9383082}
-  m_Children: []
-  m_Father: {fileID: 3610125289076258482}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8257461171836879696
 GameObject:
   m_ObjectHideFlags: 0

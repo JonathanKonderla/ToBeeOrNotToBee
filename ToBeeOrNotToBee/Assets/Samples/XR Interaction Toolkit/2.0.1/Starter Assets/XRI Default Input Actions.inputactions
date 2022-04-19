@@ -278,15 +278,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "Secondary Button",
-                    "type": "Button",
-                    "id": "1b21917c-cc1a-4fe9-a6d7-01ab044def68",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -465,17 +456,6 @@
                     "action": "Translate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "8d34dc94-116d-475d-b31f-103d70658b71",
-                    "path": "<XRController>{LeftHand}/secondaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Secondary Button",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },
