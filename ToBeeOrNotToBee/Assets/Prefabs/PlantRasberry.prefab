@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &116045391
 Transform:
   m_ObjectHideFlags: 0
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116045390}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.05, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalPosition: {x: 0, y: 0.06, z: 0}
+  m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 9212423297903755538}
   m_RootOrder: 2
@@ -40,7 +40,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116045390}
-  m_Mesh: {fileID: -2006575099986771443, guid: e7d88bb70c105804dbfab9ffb71a76ab, type: 3}
+  m_Mesh: {fileID: 4725693104785590705, guid: 09d1f834f61c18444a9cc97127e6b7c2, type: 3}
 --- !u!23 &116045393
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60,8 +60,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 7463176506087218918, guid: e7d88bb70c105804dbfab9ffb71a76ab, type: 3}
-  - {fileID: -8662539577062493628, guid: e7d88bb70c105804dbfab9ffb71a76ab, type: 3}
+  - {fileID: 4723618705073832574, guid: 09d1f834f61c18444a9cc97127e6b7c2, type: 3}
+  - {fileID: -4363412826459817300, guid: 09d1f834f61c18444a9cc97127e6b7c2, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 197363336}
   - component: {fileID: 197363338}
   m_Layer: 0
-  m_Name: Plant
+  m_Name: PlantRasberry
   m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
