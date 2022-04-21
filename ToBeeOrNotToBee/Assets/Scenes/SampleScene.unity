@@ -1577,7 +1577,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 232818781, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00030614552
+      value: 0.000070253955
+      objectReference: {fileID: 0}
+    - target: {fileID: 835874415, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 835874415, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 835874415, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 836906259, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1686,6 +1698,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 726c810cbadf54df7aa9f32b0bbf8e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &247987118 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1112229106, guid: a3414a3e7e94e454e8eafbae636b258f,
+    type: 3}
+  m_PrefabInstance: {fileID: 247987116}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &247987119 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 774375923, guid: a3414a3e7e94e454e8eafbae636b258f,
+    type: 3}
+  m_PrefabInstance: {fileID: 247987116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &250785639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10459,12 +10483,23 @@ MonoBehaviour:
   endingPanel: {fileID: 2028710872}
   startEndTransform: {fileID: 380590539}
   endGame: {fileID: 7498834286229371020, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  stallTop: {fileID: 0}
+  seedSpawn: {fileID: 247987119}
+  toolSpawn: {fileID: 247987118}
   Seeds:
   - {fileID: 4798706141446857189, guid: bf601a7d603b4a64385a8c0f0af0cb9d, type: 3}
+  - {fileID: 4798706141446857189, guid: 7377658600388824bb6c6ba30b8ed2ac, type: 3}
   - {fileID: 4798706141446857189, guid: 4baad9c233658e2449f73901177cda25, type: 3}
-  NaturePackMaterial: {fileID: 0}
-  grayScaleMaterials: []
+  grayLevel: 0
+  NaturePackMaterial: {fileID: 2100000, guid: 93caadf4359ae8143aad35b3145d31af, type: 2}
+  grayScaleMaterials:
+  - {fileID: 2100000, guid: a2fb46031534f1f49afa38ba8ea81ee2, type: 2}
+  - {fileID: 2100000, guid: 273869d15675afa4295cf832e967c3a2, type: 2}
+  - {fileID: 7463176506087218918, guid: e7d88bb70c105804dbfab9ffb71a76ab, type: 3}
+  - {fileID: -8662539577062493628, guid: e7d88bb70c105804dbfab9ffb71a76ab, type: 3}
+  - {fileID: -4363412826459817300, guid: 09d1f834f61c18444a9cc97127e6b7c2, type: 3}
+  - {fileID: 4723618705073832574, guid: 09d1f834f61c18444a9cc97127e6b7c2, type: 3}
+  - {fileID: -6862595791852354168, guid: 5c12c06bc21295e48b16138a3b99e6c8, type: 3}
+  - {fileID: 7987311750124799592, guid: 5c12c06bc21295e48b16138a3b99e6c8, type: 3}
 --- !u!1 &1889599981
 GameObject:
   m_ObjectHideFlags: 0

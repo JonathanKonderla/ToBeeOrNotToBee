@@ -13,11 +13,14 @@ public class GameSystem : MonoBehaviour
 
     public InputActionReference endGame;
 
-    public Transform stallTop;
+    public Transform seedSpawn;
+    public Transform toolSpawn;
     public GameObject[] Seeds;
 
+    public int grayLevel;
     public Material NaturePackMaterial;
     public Material[] grayScaleMaterials;
+    private Material[] originalColors;
 
     private void Awake()
     {
@@ -25,6 +28,13 @@ public class GameSystem : MonoBehaviour
         {
             endGame.action.started += EndGame;
         }
+    }
+
+    private void Start()
+    {
+        originalColors = new Material[grayScaleMaterials.Length+1];
+        originalColors[0] = NaturePackMaterial;
+        grayScaleMaterials.CopyTo(originalColors, 1);
     }
 
     private void OnDestroy()
@@ -35,10 +45,9 @@ public class GameSystem : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        grayScaleLevel(grayLevel);
     }
 
     private void EndGame(InputAction.CallbackContext context)
@@ -63,26 +72,29 @@ public class GameSystem : MonoBehaviour
     {
         if(type == "blueberry")
         {
-            Instantiate(Seeds[0], stallTop.position, stallTop.rotation, null);
+            Instantiate(Seeds[0], seedSpawn.position, seedSpawn.rotation, null);
         }
         else if(type == "strawberry")
         {
-            Instantiate(Seeds[1], stallTop.position, stallTop.rotation, null);
+            Instantiate(Seeds[1], seedSpawn.position, seedSpawn.rotation, null);
         }
         else if (type == "raspberry")
         {
-            Instantiate(Seeds[2], stallTop.position, stallTop.rotation, null);
+            Instantiate(Seeds[2], seedSpawn.position, seedSpawn.rotation, null);
         }
     }
 
     public void grayScaleLevel(int percent)
     {
-        //need to make copy of materials to keep track of the original looks
-        foreach(Material mat in grayScaleMaterials)
+        float natureLerp = Mathf.Lerp(255, 150, percent);
+        NaturePackMaterial.color = new Color(natureLerp, natureLerp, natureLerp);
+
+        for(int i = 0; i < grayScaleMaterials.Length; i++)
         {
-            Color temp = mat.color;
+            Color temp = originalColors[i].color;
             float average = (temp.r + temp.g + temp.b) / 3;
-            //mat.color;
+            
+            grayScaleMaterials[i].color = new Color(Mathf.Lerp(temp.r, average, percent), Mathf.Lerp(temp.g, average, percent), Mathf.Lerp(temp.b, average, percent));
         }
     }
 }
