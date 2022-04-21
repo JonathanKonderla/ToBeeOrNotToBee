@@ -15,8 +15,8 @@ public class BuyZinnia : MonoBehaviour{
   public GameObject NaturalPesticidePanel;
 
   public void UpdateDisplayZinnia(){ //This will update the money
-    display_zinnia.Sub_Money(2);
-    if (display_zinnia.player_money < 2){
+    display_zinnia.Sub_Money(4);
+    if (display_zinnia.player_money < 4){
       InsufficientFundsPanel.SetActive(true);
       AsterPanel.SetActive(false);
       BlueberryPanel.SetActive(false);

@@ -16,8 +16,8 @@ public class BuyAster : MonoBehaviour{
   public GameObject NaturalPesticidePanel;
 
   public void UpdateDisplayAster(){ //This will update the money
-    display_aster.Sub_Money(2); //Subtract the money by 2
-    if (display_aster.player_money < 2){
+    display_aster.Sub_Money(4); //Subtract the money by 4
+    if (display_aster.player_money < 4){
       InsufficientFundsPanel.SetActive(true);
       AsterPanel.SetActive(false);
       BlueberryPanel.SetActive(false);
