@@ -59,7 +59,7 @@ public class GameSystem : MonoBehaviour
         introPanel.SetActive(false);
     }
 
-    public void SpawnSeed(string type)
+    public void SpawnItem(string type)
     {
         if(type == "blueberry")
         {

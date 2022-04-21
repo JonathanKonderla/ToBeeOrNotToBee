@@ -8,9 +8,9 @@ public class SellBucket : MonoBehaviour{
     {
         if (other.gameObject.CompareTag("Fruit"))
         {
-          //REESA MODIFY IT
-            //Destroy(other.gameObject.transform.parent.gameObject);
-            float sellPrice = other.gameObject.transform.parent.gameObject.GetComponent<Plant>().SellPlant();
+            Plant sellPlant = other.gameObject.transform.parent.gameObject.GetComponent<Plant>();
+            float sellPrice = sellPlant.GetValue();
+            sellPlant.SellPlant();
             harvest_money.Add_Money(sellPrice);
         }
     }
