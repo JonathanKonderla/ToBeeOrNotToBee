@@ -39,6 +39,12 @@ public class GameSystem : MonoBehaviour
 
     private void OnDestroy()
     {
+        //reset grayscale colors
+        for(int i = 0; i < grayScaleMaterials.Length; i++)
+        {
+            grayScaleMaterials[i].color = originalColors[i + 1].color;
+        }
+
         if (endGame != null)
         {
             endGame.action.started -= EndGame;
