@@ -316,7 +316,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 232818781, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00009504645
+      value: 0.0017449979
+      objectReference: {fileID: 0}
+    - target: {fileID: 835874415, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 835874415, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 835874415, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 836906259, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -326,6 +338,50 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 836906259, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 688431408571442647, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 869788629561318540, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1051737155879848632, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: "Aster seeds \n\nCost: $4\nGermination Time: \n~ 2 weeks"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1463844358517254938, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: "Blueberry seeds \n\nCost: $5\nGermination time: \n6 to 12 weeks"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774918102468120564, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: "Sunflower seeds \n\nCost: $5\nGermination Time:\n1 to 2 weeks"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939409128442472098, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 6182ce650559242f6aa97a137d80a2e6, type: 3}
+    - target: {fileID: 3284298498250202231, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3492429219584408129, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 10ea9683fb61e4289a6ad91874ecfa21, type: 3}
     - target: {fileID: 3610125288266481536, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_Name
@@ -384,6 +440,57 @@ PrefabInstance:
     - target: {fileID: 3610125288266481543, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3783971512943097660, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: "Zinnia seeds \n\nCost: $4\nGermination Time:\n~ 1 week"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003131907032554199, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165534236660993366, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: d9c5698f15ab444ca9cb825df1bec715, type: 3}
+    - target: {fileID: 7104705642736946846, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 554acb620969949b4a338e4b2a34532c, type: 3}
+    - target: {fileID: 7329344433761980525, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 4e3e48aa5f7904461813a3658ee5e11f, type: 3}
+    - target: {fileID: 7653354218414983211, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219959091863544151, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: "Organic Pesticides\n\nRemove weeds\nand insects using \nnatural ingredients
+        \n\nCost: $11"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388912916163243392, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 8c7d01f1f1c6a44e5b1910b02f6e1f04, type: 3}
+    - target: {fileID: 8585524531580713296, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_Text
+      value: "Strawberry seeds \n\nCost: $7\nGermination time:\n1 to 6 weeks"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9207605409917977834, guid: a3414a3e7e94e454e8eafbae636b258f,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

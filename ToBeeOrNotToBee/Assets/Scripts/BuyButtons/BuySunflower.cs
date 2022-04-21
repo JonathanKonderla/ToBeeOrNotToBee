@@ -16,8 +16,8 @@ public class BuySunflower : MonoBehaviour{
   public GameObject NaturalPesticidePanel;
 
   public void UpdateDisplaySunflower(){ //This will update the money
-    display_sunflower.Sub_Money(2); //Subtract the money by 2
-    if (display_sunflower.player_money < 2){
+    display_sunflower.Sub_Money(5); //Subtract the money by 5
+    if (display_sunflower.player_money < 5){
       InsufficientFundsPanel.SetActive(true);
       InsufficientFundsPanel.SetActive(true);
       AsterPanel.SetActive(false);
