@@ -15,6 +15,7 @@ public class MoneyScript : MonoBehaviour {
 
     public void Add_Money(float money_to_add){ //Call this later
       player_money = player_money + money_to_add; //Add the money
+      money_text.text = "Money Remaining: $" + player_money.ToString();
     }
 
     public void Sub_Money(int money_to_sub){ //Call this later
