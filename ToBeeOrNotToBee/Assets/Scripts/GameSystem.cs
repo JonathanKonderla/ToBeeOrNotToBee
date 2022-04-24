@@ -47,7 +47,7 @@ public class GameSystem : MonoBehaviour
 
     private void Update()
     {
-        grayScaleLevel(grayLevel);
+        //grayScaleLevel(grayLevel);
     }
 
     private void EndGame(InputAction.CallbackContext context)
@@ -86,7 +86,7 @@ public class GameSystem : MonoBehaviour
 
     public void grayScaleLevel(int percent)
     {
-        float natureLerp = Mathf.Lerp(255, 150, percent);
+        float natureLerp = Mathf.Lerp(255 / 255, 150 / 255, percent);
         NaturePackMaterial.color = new Color(natureLerp, natureLerp, natureLerp);
 
         for(int i = 0; i < grayScaleMaterials.Length; i++)
@@ -94,7 +94,7 @@ public class GameSystem : MonoBehaviour
             Color temp = originalColors[i].color;
             float average = (temp.r + temp.g + temp.b) / 3;
             
-            grayScaleMaterials[i].color = new Color(Mathf.Lerp(temp.r, average, percent), Mathf.Lerp(temp.g, average, percent), Mathf.Lerp(temp.b, average, percent));
+            grayScaleMaterials[i].color = new Color(Mathf.Lerp(temp.r, average, percent)/255, Mathf.Lerp(temp.g, average, percent)/255, Mathf.Lerp(temp.b, average, percent)/255);
         }
     }
 }
