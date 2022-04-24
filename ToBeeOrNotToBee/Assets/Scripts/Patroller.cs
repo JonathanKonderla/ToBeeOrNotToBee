@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Patroller : MonoBehaviour
 {
     public Transform[] waypoints;
+    public GameObject[] active_plants1;
+    public GameObject[] active_plants2;
     public GameObject[] active_plants;
     
     public Transform hiveTransform;
@@ -25,24 +28,23 @@ public class Patroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (active_plants.Length != 0)
-        {
-            float dist = Vector3.Distance(transform.position, waypoints[waypointIndex].position + new Vector3(0, height, 0));
-            if (dist < 0.05f)
-            {
-                IncreaseIndex();
-            }
-        }
         Patrol();
         FindPlants();
     }
 
     void Patrol()
     {
+        // If there are any more active plants, go to them
         if (active_plants.Length != 0)
         {
             Vector3 dir = Vector3.Normalize(waypoints[waypointIndex].position - transform.position + new Vector3(0, height, 0));
             transform.Translate(dir * speed * Time.deltaTime / 10);
+
+            float dist = Vector3.Distance(transform.position, waypoints[waypointIndex].position + new Vector3(0, height, 0));
+            if (dist < 0.05f)
+            {
+                IncreaseIndex();
+            }
         }
         else
         {
@@ -60,27 +62,30 @@ public class Patroller : MonoBehaviour
         }
     }
 
+    // The bees switch to the next waypoint / plant
     void IncreaseIndex()
     {
         waypointIndex++;
-        if(waypointIndex >= waypoints.Length)
+        if (waypointIndex >= waypoints.Length)
         {
             waypointIndex = 0;
         }
+        waypointIndex = Random.Range(0, waypoints.Length);
         transform.LookAt(waypoints[waypointIndex].position);
     }
 
+    // Finding the active plants ("stem" or "plant" tag)
     void FindPlants()
     {
         active_plants = GameObject.FindGameObjectsWithTag("Stem");
+        active_plants1 = GameObject.FindGameObjectsWithTag("Stem");
+        active_plants2 = GameObject.FindGameObjectsWithTag("Fruit");
+
+        active_plants = active_plants1.Concat(active_plants2).ToArray();
+
         if (active_plants.Length != 0)
         {
             waypoints = new Transform[active_plants.Length];
-
-            for (int i = 0; i < active_plants.Length; i++)
-            {
-                waypoints[i] = active_plants[i].transform;
-            }
         }
     }
 }
