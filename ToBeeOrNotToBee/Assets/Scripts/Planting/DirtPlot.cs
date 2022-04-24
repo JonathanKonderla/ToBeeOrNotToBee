@@ -51,10 +51,12 @@ public class DirtPlot : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Fruit"))
         {
+            plant = other.gameObject.transform.parent.gameObject;
             plant.GetComponent<Rigidbody>().isKinematic = false;
             isEmpty = true;
             isPlowed = false;
             GetComponent<MeshRenderer>().material = unplowedMat;
+            plant.GetComponent<Plant>().timer.gameObject.SetActive(false);
         }
     }
 }

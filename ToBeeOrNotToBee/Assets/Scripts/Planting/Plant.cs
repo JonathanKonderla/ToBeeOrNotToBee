@@ -18,7 +18,7 @@ public class Plant : MonoBehaviour
     [SerializeField]
     private GameObject fruit;
     [SerializeField]
-    private Renderer timer;
+    public Renderer timer;
 
     public PlantState state;
     public float growTime;
