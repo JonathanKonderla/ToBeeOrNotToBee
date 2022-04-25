@@ -82,6 +82,14 @@ public class GameSystem : MonoBehaviour
         {
             Instantiate(Seeds[2], seedSpawn.position, seedSpawn.rotation, null);
         }
+        else if (type == "pesticide")
+        {
+            Instantiate(Seeds[3], seedSpawn.position, seedSpawn.rotation, null);
+        }
+        else if (type == "natural")
+        {
+            Instantiate(Seeds[4], seedSpawn.position, seedSpawn.rotation, null);
+        }
     }
 
     public void grayScaleLevel(int percent)

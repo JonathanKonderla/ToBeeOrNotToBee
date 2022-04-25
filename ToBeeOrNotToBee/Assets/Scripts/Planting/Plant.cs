@@ -105,9 +105,16 @@ public class Plant : MonoBehaviour
     }
 
     public float SellPlant(){
-        Destroy(this);
+        StartCoroutine("WaitAndDestroy");
         return GetValue();
     }
+
+    IEnumerator WaitAndDestroy()
+    {
+        yield return new WaitForSeconds(1);
+        Destroy(this);
+    }
+
 
     public float GetValue()
     {
