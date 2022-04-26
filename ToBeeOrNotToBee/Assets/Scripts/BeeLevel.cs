@@ -7,15 +7,15 @@ public class BeeLevel : MonoBehaviour
 {
 
     public float bee_level;
-    GameObject beecube;
+    public GameObject beecube;
     private float level_low;
     private float level_high;
     private float cube_y;
-    GameObject bee1;
-    GameObject bee2;
-    GameObject bee3;
-    GameObject bee4;
-    GameObject bee5;
+    public GameObject bee1;
+    public GameObject bee2;
+    public GameObject bee3;
+    public GameObject bee4;
+    public GameObject bee5;
 
     // Start is called before the first frame update
     void Start()
@@ -40,43 +40,43 @@ public class BeeLevel : MonoBehaviour
         // Adjust visible bees based on bee level
         if (bee_level > 0)
         {
-            (bee1.GetComponent<MeshRenderer>()).enabled = true;
+            bee1.SetActive(true);
         }
         else
         {
-            (bee1.GetComponent<MeshRenderer>()).enabled = false;
+            bee1.SetActive(false);
         }
         if (bee_level > 20)
         {
-            (bee2.GetComponent<MeshRenderer>()).enabled = true;
+            bee2.SetActive(true);
         }
         else
         {
-            (bee2.GetComponent<MeshRenderer>()).enabled = false;
+            bee2.SetActive(false);
         }
         if (bee_level > 40)
         {
-            (bee3.GetComponent<MeshRenderer>()).enabled = true;
+            bee3.SetActive(true);
         }
         else
         {
-            (bee3.GetComponent<MeshRenderer>()).enabled = false;
+            bee3.SetActive(false);
         }
         if (bee_level > 60)
         {
-            (bee4.GetComponent<MeshRenderer>()).enabled = true;
+            bee4.SetActive(true);
         }
         else
         {
-            (bee4.GetComponent<MeshRenderer>()).enabled = false;
+            bee4.SetActive(false);
         }
         if (bee_level > 80)
         {
-            (bee5.GetComponent<MeshRenderer>()).enabled = true;
+            bee5.SetActive(true);
         }
         else
         {
-            (bee5.GetComponent<MeshRenderer>()).enabled = false;
+            bee5.SetActive(false);
         }
 
     }

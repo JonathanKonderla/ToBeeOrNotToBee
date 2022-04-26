@@ -28,7 +28,7 @@ public class Plant : MonoBehaviour
 
     private bool hasWeeds;
     private bool hasBugs = false;
-    private float bugChance = 0.1f;
+    private float bugChance = 0.05f;
     public GameObject bug;
 
     private Color red = new Color(0.922f, 0.136f, 0.137f);
@@ -86,6 +86,8 @@ public class Plant : MonoBehaviour
                     state = PlantState.Fruit;
                     Destroy(stem);
                     fruit.SetActive(true);
+                    GetComponent<Rigidbody>().isKinematic = false;
+                    GetComponent<Rigidbody>().useGravity = false;
                 }
                 break;
             case PlantState.Fruit:
@@ -119,6 +121,6 @@ public class Plant : MonoBehaviour
     public float GetValue()
     {
         quality = Mathf.Clamp(quality, 0.5f, 1.5f);
-        return value * quality;
+        return Mathf.Ceil(value * quality);
     }
 }

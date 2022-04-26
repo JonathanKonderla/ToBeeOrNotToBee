@@ -84,11 +84,11 @@ public class GameSystem : MonoBehaviour
         }
         else if (type == "pesticide")
         {
-            Instantiate(Seeds[3], seedSpawn.position, seedSpawn.rotation, null);
+            Instantiate(Seeds[3], toolSpawn.position, toolSpawn.rotation, null);
         }
         else if (type == "natural")
         {
-            Instantiate(Seeds[4], seedSpawn.position, seedSpawn.rotation, null);
+            Instantiate(Seeds[4], toolSpawn.position, toolSpawn.rotation, null);
         }
     }
 

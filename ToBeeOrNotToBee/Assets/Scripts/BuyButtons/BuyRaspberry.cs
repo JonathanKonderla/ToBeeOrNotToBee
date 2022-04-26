@@ -16,8 +16,8 @@ public class BuyRaspberry : MonoBehaviour{
   public GameObject NaturalPesticidePanel;
 
   public void UpdateDisplayRaspberry(){ //This will update the money
-    display_raspberry.Sub_Money(4); //Subtract the money by 7
-    if (display_raspberry.player_money < 4){
+    display_raspberry.Sub_Money(5); //Subtract the money by 7
+    if (display_raspberry.player_money < 5){
       InsufficientFundsPanel.SetActive(true);
       AsterPanel.SetActive(false);
       BlueberryPanel.SetActive(false);

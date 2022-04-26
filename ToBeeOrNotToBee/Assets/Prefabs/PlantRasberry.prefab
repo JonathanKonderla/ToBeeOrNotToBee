@@ -440,7 +440,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   m_ThrowVelocityScale: 1.5
   m_ThrowAngularVelocityScale: 1
-  m_ForceGravityOnDetach: 0
+  m_ForceGravityOnDetach: 1
   m_RetainTransformParent: 0
   m_AttachPointCompatibilityMode: 0
 --- !u!114 &197363338
@@ -460,8 +460,8 @@ MonoBehaviour:
   fruit: {fileID: 116045390}
   timer: {fileID: 5266873759615642432}
   state: 0
-  growTime: 10
-  value: 10
+  growTime: 30
+  value: 5
   bug: {fileID: 6853046754376402249, guid: d8433d1959764754bbdd1121e83b361f, type: 3}
 --- !u!1 &5875049515685424487
 GameObject:

@@ -15,8 +15,8 @@ public class BuyStrawberry : MonoBehaviour{
   public GameObject NaturalPesticidePanel;
 
   public void UpdateDisplayStrawberry(){ //This will update the money
-    display_strawberry.Sub_Money(5); //Subtract the money by 5
-    if (display_strawberry.player_money < 5){
+    display_strawberry.Sub_Money(4); //Subtract the money by 5
+    if (display_strawberry.player_money < 4){
       InsufficientFundsPanel.SetActive(true);
       AsterPanel.SetActive(false);
       BlueberryPanel.SetActive(false);

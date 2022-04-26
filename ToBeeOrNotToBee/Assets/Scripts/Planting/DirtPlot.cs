@@ -9,6 +9,8 @@ public class DirtPlot : MonoBehaviour
     public bool hasWeeds = false;
     public bool hasBugs = false;
 
+    public BeeLevel beeLevel;
+
     public Material unplowedMat;
     public Material plowedMat;
 
@@ -39,6 +41,8 @@ public class DirtPlot : MonoBehaviour
             plant.transform.position = this.transform.position;
             plant.transform.rotation = Quaternion.identity;
             isEmpty = false;
+            beeLevel.Increase_Bees();
+            print("bees");
         }
         else if (other.gameObject.CompareTag("Plow"))
         {
@@ -52,11 +56,12 @@ public class DirtPlot : MonoBehaviour
         if (other.gameObject.CompareTag("Fruit"))
         {
             plant = other.gameObject.transform.parent.gameObject;
-            plant.GetComponent<Rigidbody>().isKinematic = false;
             isEmpty = true;
             isPlowed = false;
             GetComponent<MeshRenderer>().material = unplowedMat;
             plant.GetComponent<Plant>().timer.gameObject.SetActive(false);
+            beeLevel.Increase_Bees();
+            print("bees");
         }
     }
 }

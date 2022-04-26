@@ -5,12 +5,10 @@ using System.Linq;
 
 public class Patroller : MonoBehaviour
 {
-    public Transform[] waypoints;
-    public GameObject[] active_plants1;
-    public GameObject[] active_plants2;
+    public GameObject[] waypoints;
     public GameObject[] active_plants;
     
-    public Transform hiveTransform;
+    public GameObject hiveTransform;
     public float height = 1;
     public int waypointIndex;
 
@@ -23,13 +21,14 @@ public class Patroller : MonoBehaviour
         speed = 10;
         FindPlants();
         waypointIndex = 0;
+        waypoints = new GameObject[] {hiveTransform.gameObject};
     }
 
     // Update is called once per frame
     void Update()
     {
-        Patrol();
         FindPlants();
+        Patrol();
     }
 
     void Patrol()
@@ -37,22 +36,31 @@ public class Patroller : MonoBehaviour
         // If there are any more active plants, go to them
         if (active_plants.Length != 0)
         {
-            Vector3 dir = Vector3.Normalize(waypoints[waypointIndex].position - transform.position + new Vector3(0, height, 0));
+            if (!this.GetComponent<MeshRenderer>().enabled)
+            {
+                this.GetComponent<MeshRenderer>().enabled = true;
+            }
+
+            Vector3 dir = Vector3.Normalize(waypoints[waypointIndex].transform.position - transform.position + new Vector3(0, height, 0));
             transform.Translate(dir * speed * Time.deltaTime / 10);
 
-            float dist = Vector3.Distance(transform.position, waypoints[waypointIndex].position + new Vector3(0, height, 0));
+            float dist = Vector3.Distance(transform.position, waypoints[waypointIndex].transform.position + new Vector3(0, height, 0));
             if (dist < 0.05f)
             {
+                if(waypointIndex != 0)
+                {
+                    waypoints[waypointIndex].transform.parent.gameObject.GetComponent<Plant>().Pollinate();
+                }
                 IncreaseIndex();
             }
         }
         else
         {
-            float dist = Vector3.Distance(transform.position, hiveTransform.position + new Vector3(0, height, 0));
+            float dist = Vector3.Distance(transform.position, hiveTransform.transform.position + new Vector3(0, height, 0));
 
             if (dist > 0.05f)
             {
-                Vector3 dir = Vector3.Normalize(hiveTransform.position - transform.position + new Vector3(0, height, 0));
+                Vector3 dir = Vector3.Normalize(hiveTransform.transform.position - transform.position + new Vector3(0, height, 0));
                 transform.Translate(dir * speed * Time.deltaTime / 10);
             }
             else
@@ -71,21 +79,19 @@ public class Patroller : MonoBehaviour
             waypointIndex = 0;
         }
         waypointIndex = Random.Range(0, waypoints.Length);
-        transform.LookAt(waypoints[waypointIndex].position);
+        //transform.LookAt(waypoints[waypointIndex].transform.position);
     }
 
     // Finding the active plants ("stem" or "plant" tag)
     void FindPlants()
     {
         active_plants = GameObject.FindGameObjectsWithTag("Stem");
-        active_plants1 = GameObject.FindGameObjectsWithTag("Stem");
-        active_plants2 = GameObject.FindGameObjectsWithTag("Fruit");
-
-        active_plants = active_plants1.Concat(active_plants2).ToArray();
 
         if (active_plants.Length != 0)
         {
-            waypoints = new Transform[active_plants.Length];
+            waypoints = new GameObject[active_plants.Length + 1];
+            waypoints[0] = hiveTransform;
+            active_plants.CopyTo(waypoints, 1);
         }
     }
 }

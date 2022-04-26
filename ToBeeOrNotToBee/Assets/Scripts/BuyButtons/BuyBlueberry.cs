@@ -16,8 +16,8 @@ public class BuyBlueberry : MonoBehaviour{
   public GameObject NaturalPesticidePanel;
 
   public void UpdateDisplayBlueberry(){ //This will update the money
-    display_blueberry.Sub_Money(5); //Subtract the money by 5
-    if (display_blueberry.player_money < 5){ //Not enough money to purchase blueberry seeds
+    display_blueberry.Sub_Money(6); //Subtract the money by 5
+    if (display_blueberry.player_money < 6){ //Not enough money to purchase blueberry seeds
       InsufficientFundsPanel.SetActive(true); //Show InsufficientFundsPanel
       AsterPanel.SetActive(false);
       BlueberryPanel.SetActive(false);

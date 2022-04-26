@@ -6,7 +6,7 @@ public class GroupPlot : MonoBehaviour
 {
     public GameObject weedPrefab;
     public DirtPlot[] plots;
-    public float weedChance = 0.01f;
+    public float weedChance = 0.001f;
 
     private void Start()
     {
