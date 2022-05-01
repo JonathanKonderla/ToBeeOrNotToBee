@@ -106,17 +106,10 @@ public class Plant : MonoBehaviour
         InvokeRepeating("BugChance", 0, 1);
     }
 
-    public float SellPlant(){
-        StartCoroutine("WaitAndDestroy");
-        return GetValue();
+    public void SellPlant(){
+        print("destroying object");
+        Destroy(this.gameObject);
     }
-
-    IEnumerator WaitAndDestroy()
-    {
-        yield return new WaitForSeconds(1);
-        Destroy(this);
-    }
-
 
     public float GetValue()
     {

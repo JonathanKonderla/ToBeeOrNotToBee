@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18033695, g: 0.22577962, b: 0.30695373, a: 1}
+  m_IndirectSpecularColor: {r: 0.18033743, g: 0.22578035, b: 0.30695525, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1357,143 +1357,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 15539750, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -200
-      objectReference: {fileID: 0}
-    - target: {fileID: 168199643, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -80
-      objectReference: {fileID: 0}
-    - target: {fileID: 232818781, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.00046014777
-      objectReference: {fileID: 0}
-    - target: {fileID: 262619408, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 556618779, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 624519021, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -120
-      objectReference: {fileID: 0}
-    - target: {fileID: 774375923, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.655
-      objectReference: {fileID: 0}
-    - target: {fileID: 774375923, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.573
-      objectReference: {fileID: 0}
-    - target: {fileID: 774375923, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.534
-      objectReference: {fileID: 0}
-    - target: {fileID: 835874415, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 835874415, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 835874415, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 836906259, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 836906259, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112229106, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.716
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112229106, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.587
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112229106, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.513
-      objectReference: {fileID: 0}
-    - target: {fileID: 1155664385, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 752154347761166927, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1864618123}
-    - target: {fileID: 752154347761166927, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: natural
-      objectReference: {fileID: 0}
     - target: {fileID: 896693996603921668, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 896693996603921668, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 896693996603921668, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1376462677734442083, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1386773805467234135, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_AnchorMax.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1386773805467234135, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1386773805467234135, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -160
-      objectReference: {fileID: 0}
-    - target: {fileID: 1463844358517254938, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_Text
-      value: "Blueberry seeds \n\nCost: $6\nGermination time: \n4 to 8 weeks"
       objectReference: {fileID: 0}
     - target: {fileID: 2007374072837549447, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1864618123}
-    - target: {fileID: 3183399396754451363, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3492429219584408129, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_Texture
-      value: 
-      objectReference: {fileID: 2800000, guid: 10ea9683fb61e4289a6ad91874ecfa21, type: 3}
     - target: {fileID: 3610125288266481536, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_Name
@@ -1554,86 +1442,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3610125289076258480, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3610125289076258482, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.9928
-      objectReference: {fileID: 0}
-    - target: {fileID: 3610125289076258482, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.986
-      objectReference: {fileID: 0}
-    - target: {fileID: 3610125289076258483, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4003131907032554199, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5006494244462052311, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1864618123}
-    - target: {fileID: 5006494244462052311, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: pesticide
-      objectReference: {fileID: 0}
-    - target: {fileID: 6631239448304145010, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -40
-      objectReference: {fileID: 0}
     - target: {fileID: 7082766849275106361, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1864618123}
-    - target: {fileID: 7104705642736946846, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_Texture
-      value: 
-      objectReference: {fileID: 2800000, guid: 554acb620969949b4a338e4b2a34532c, type: 3}
-    - target: {fileID: 7653354218414983211, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7706418411788937510, guid: a3414a3e7e94e454e8eafbae636b258f,
+    - target: {fileID: 8219959091863544151, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_Text
-      value: "Raspberry seeds \n\nCost: $5\nGermination Time:\n3 to 6 weeks "
+      value: 'Organic Pesticides
+
+
+        Remove weeds
+
+
+        Cost: $11'
       objectReference: {fileID: 0}
-    - target: {fileID: 8388912916163243392, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_Texture
-      value: 
-      objectReference: {fileID: 2800000, guid: 8c7d01f1f1c6a44e5b1910b02f6e1f04, type: 3}
     - target: {fileID: 8407430033534700955, guid: a3414a3e7e94e454e8eafbae636b258f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1864618123}
-    - target: {fileID: 8585524531580713296, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_Text
-      value: "Strawberry seeds \n\nCost: $4\nGermination time:\n2 to 4 weeks"
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207605409917977834, guid: a3414a3e7e94e454e8eafbae636b258f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3414a3e7e94e454e8eafbae636b258f, type: 3}
 --- !u!114 &247987117 stripped
@@ -2715,7 +2549,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Hoe the plots and plant \nyour seeds. Wait for them\nto grow and watch
+  m_text: "Hoe the plots and plant \nyour seeds.\n\nWait for them\nto grow and watch
     for\nweeds & bugs!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3440,7 +3274,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479809202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -100}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1483744991}

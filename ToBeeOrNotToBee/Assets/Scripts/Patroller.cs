@@ -19,9 +19,16 @@ public class Patroller : MonoBehaviour
     {
         //transform.LookAt(waypoints[waypointIndex].position);
         speed = 10;
+
+        waypoints = new GameObject[10];
+
+        for (int i = 0; i < waypoints.Length; i++)
+        {
+            waypoints[i] = null;
+        }
+
         FindPlants();
         waypointIndex = 0;
-        waypoints = new GameObject[] {hiveTransform.gameObject};
     }
 
     // Update is called once per frame
@@ -39,6 +46,11 @@ public class Patroller : MonoBehaviour
             if (!this.GetComponent<MeshRenderer>().enabled)
             {
                 this.GetComponent<MeshRenderer>().enabled = true;
+            }
+            if(waypoints[waypointIndex] == null)
+            {
+                waypointIndex = 0;
+                return;
             }
 
             Vector3 dir = Vector3.Normalize(waypoints[waypointIndex].transform.position - transform.position + new Vector3(0, height, 0));
@@ -87,11 +99,16 @@ public class Patroller : MonoBehaviour
     {
         active_plants = GameObject.FindGameObjectsWithTag("Stem");
 
-        if (active_plants.Length != 0)
+        waypoints[0] = hiveTransform;
+
+        for (int i = 1; i < active_plants.Length + 1; i++)
         {
-            waypoints = new GameObject[active_plants.Length + 1];
-            waypoints[0] = hiveTransform;
-            active_plants.CopyTo(waypoints, 1);
+            waypoints[i] = active_plants[i-1];
+        }
+
+        for(int i = active_plants.Length + 1; i < waypoints.Length; i++)
+        {
+            waypoints[i] = null;
         }
     }
 }

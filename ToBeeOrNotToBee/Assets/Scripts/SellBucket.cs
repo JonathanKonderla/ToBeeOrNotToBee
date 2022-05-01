@@ -9,9 +9,8 @@ public class SellBucket : MonoBehaviour{
         if (other.gameObject.CompareTag("Fruit"))
         {
             Plant sellPlant = other.gameObject.transform.parent.gameObject.GetComponent<Plant>();
-            float sellPrice = sellPlant.GetValue();
+            harvest_money.Add_Money(sellPlant.GetValue());
             sellPlant.SellPlant();
-            harvest_money.Add_Money(sellPrice);
         }
     }
 }
