@@ -22,15 +22,22 @@ public class DirtPlot : MonoBehaviour
         //position random theta
         Instantiate(weed, this.transform.position + new Vector3(weedRadius * Mathf.Cos(Random.Range(0, 2 * Mathf.PI)), 0, weedRadius * Mathf.Sin(Random.Range(0, 2 * Mathf.PI))), Quaternion.identity);
         hasWeeds = true;
-    }
-
-    private void Update()
-    {
-        if (!isEmpty && hasWeeds)
+        if (!isEmpty)
         {
             plant.GetComponent<Plant>().SetHasWeeds(hasWeeds);
         }
     }
+
+    public void DeweedPlot()
+    {
+        //position random theta
+        hasWeeds = false;
+        if (!isEmpty)
+        {
+            plant.GetComponent<Plant>().SetHasWeeds(hasWeeds);
+        }
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {

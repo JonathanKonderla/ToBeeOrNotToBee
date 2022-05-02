@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18033743, g: 0.22578035, b: 0.30695525, a: 1}
+  m_IndirectSpecularColor: {r: 0.18033718, g: 0.22578008, b: 0.30695432, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4385,6 +4385,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614835915}
     m_Modifications:
+    - target: {fileID: 389777221971349699, guid: 669248eba5430fa46b9dd8c312a33d4d,
+        type: 3}
+      propertyPath: weedPrefab
+      value: 
+      objectReference: {fileID: 1182590474366720944, guid: 7634f6f6047308949be97603ef5e5b41,
+        type: 3}
     - target: {fileID: 1680757339065583924, guid: 669248eba5430fa46b9dd8c312a33d4d,
         type: 3}
       propertyPath: beeLevel
@@ -9533,6 +9539,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614835915}
     m_Modifications:
+    - target: {fileID: 389777221971349699, guid: 669248eba5430fa46b9dd8c312a33d4d,
+        type: 3}
+      propertyPath: weedPrefab
+      value: 
+      objectReference: {fileID: 1182590474366720944, guid: 7634f6f6047308949be97603ef5e5b41,
+        type: 3}
     - target: {fileID: 1680757339065583924, guid: 669248eba5430fa46b9dd8c312a33d4d,
         type: 3}
       propertyPath: beeLevel
@@ -11671,6 +11683,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614835915}
     m_Modifications:
+    - target: {fileID: 389777221971349699, guid: 669248eba5430fa46b9dd8c312a33d4d,
+        type: 3}
+      propertyPath: weedPrefab
+      value: 
+      objectReference: {fileID: 1182590474366720944, guid: 7634f6f6047308949be97603ef5e5b41,
+        type: 3}
     - target: {fileID: 1680757339065583924, guid: 669248eba5430fa46b9dd8c312a33d4d,
         type: 3}
       propertyPath: beeLevel

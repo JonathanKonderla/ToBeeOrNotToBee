@@ -10,6 +10,8 @@ TagManager:
   - Fruit
   - Stem
   - steps
+  - Bug
+  - Weed
   layers:
   - Default
   - TransparentFX
