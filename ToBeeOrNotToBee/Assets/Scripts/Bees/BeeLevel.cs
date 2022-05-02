@@ -20,22 +20,16 @@ public class BeeLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bee_level = 20;
-        level_low = 0.92f;
-        level_high = 1.655f;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        bee_level = 10;
+        level_low = 0.009f;
+        level_high = 0.016f;
     }
 
     public void Increase_Bees()
     {
         bee_level = bee_level + (100 - bee_level) / 10;
-        cube_y = (bee_level * (level_high - level_low) + level_low);
-        beecube.transform.position = new Vector3(0.0744f, cube_y, 0.1254f);
+        cube_y = (0.01f * bee_level * (level_high - level_low) + level_low);
+        beecube.transform.localPosition = new Vector3(-0.001f, cube_y, 0.0f);
 
         // Adjust visible bees based on bee level
         if (bee_level > 0)
@@ -85,6 +79,6 @@ public class BeeLevel : MonoBehaviour
     {
         bee_level = bee_level - decrease_bees_by;
         cube_y = (bee_level * (level_high - level_low) + level_low);
-        beecube.transform.position = new Vector3(0.0744f, cube_y, 0.1254f);
+        beecube.transform.localPosition = new Vector3(-0.001f, cube_y, 0.0f);
     }
 }
