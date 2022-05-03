@@ -7,10 +7,6 @@ public class BeeLevel : MonoBehaviour
 {
 
     public float bee_level;
-    public GameObject beecube;
-    private float level_low;
-    private float level_high;
-    private float cube_y;
     public GameObject bee1;
     public GameObject bee2;
     public GameObject bee3;
@@ -21,16 +17,22 @@ public class BeeLevel : MonoBehaviour
     void Start()
     {
         bee_level = 10;
-        level_low = 0.009f;
-        level_high = 0.016f;
     }
 
     public void Increase_Bees()
     {
         bee_level = bee_level + (100 - bee_level) / 10;
-        cube_y = (0.01f * bee_level * (level_high - level_low) + level_low);
-        beecube.transform.localPosition = new Vector3(-0.001f, cube_y, 0.0f);
+        Bee_Display();
+    }
 
+    public void Decrease_Bees(int decrease_bees_by)
+    {
+        bee_level = bee_level - decrease_bees_by;
+        Bee_Display();
+    }
+
+    public void Bee_Display()
+    {
         // Adjust visible bees based on bee level
         if (bee_level > 0)
         {
@@ -72,13 +74,5 @@ public class BeeLevel : MonoBehaviour
         {
             bee5.SetActive(false);
         }
-
-    }
-
-    public void Decrease_Bees(int decrease_bees_by)
-    {
-        bee_level = bee_level - decrease_bees_by;
-        cube_y = (bee_level * (level_high - level_low) + level_low);
-        beecube.transform.localPosition = new Vector3(-0.001f, cube_y, 0.0f);
     }
 }
