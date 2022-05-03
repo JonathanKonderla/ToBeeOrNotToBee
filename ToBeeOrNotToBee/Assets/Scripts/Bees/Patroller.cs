@@ -12,13 +12,13 @@ public class Patroller : MonoBehaviour
     public float height = 1;
     public int waypointIndex;
 
-    private int speed;
+    private float speed;
 
     // Start is called before the first frame update
     void Start()
     {
         //transform.LookAt(waypoints[waypointIndex].position);
-        speed = 10;
+        speed = 1;
 
         waypoints = new GameObject[10];
 
@@ -53,8 +53,15 @@ public class Patroller : MonoBehaviour
                 return;
             }
 
-            Vector3 dir = Vector3.Normalize(waypoints[waypointIndex].transform.position - transform.position + new Vector3(0, height, 0));
-            transform.Translate(dir * speed * Time.deltaTime / 10);
+            //Vector3 dir = Vector3.Normalize(waypoints[waypointIndex].transform.position - transform.position + new Vector3(0, height, 0));
+            //transform.Translate(dir * speed * Time.deltaTime / 10);
+            var step = speed * Time.deltaTime/2;
+            var rotstep = speed * Time.deltaTime * 4;
+            transform.position = Vector3.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, step);
+
+            Vector3 targetDirection = waypoints[waypointIndex].transform.position - transform.position;
+            Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, rotstep, 0.0f);
+            transform.rotation = Quaternion.LookRotation(newDirection);
 
             float dist = Vector3.Distance(transform.position, waypoints[waypointIndex].transform.position + new Vector3(0, height, 0));
             if (dist < 0.05f)
@@ -72,8 +79,15 @@ public class Patroller : MonoBehaviour
 
             if (dist > 0.05f)
             {
-                Vector3 dir = Vector3.Normalize(hiveTransform.transform.position - transform.position + new Vector3(0, height, 0));
-                transform.Translate(dir * speed * Time.deltaTime / 10);
+                //Vector3 dir = Vector3.Normalize(hiveTransform.transform.position - transform.position + new Vector3(0, height, 0));
+                //transform.Translate(dir * speed * Time.deltaTime / 10);
+                var step = speed * Time.deltaTime / 2;
+                var rotstep = speed * Time.deltaTime * 4;
+                transform.position = Vector3.MoveTowards(transform.position, hiveTransform.transform.position, step);
+
+                Vector3 targetDirection = hiveTransform.transform.position - transform.position;
+                Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, rotstep, 0.0f);
+                transform.rotation = Quaternion.LookRotation(newDirection);
             }
             else
             {
@@ -85,13 +99,8 @@ public class Patroller : MonoBehaviour
     // The bees switch to the next waypoint / plant
     void IncreaseIndex()
     {
-        waypointIndex++;
-        if (waypointIndex >= waypoints.Length)
-        {
-            waypointIndex = 0;
-        }
         waypointIndex = Random.Range(0, waypoints.Length);
-        //transform.LookAt(waypoints[waypointIndex].transform.position);
+        transform.LookAt(waypoints[waypointIndex].transform.position);
     }
 
     // Finding the active plants ("stem" or "plant" tag)
@@ -111,4 +120,5 @@ public class Patroller : MonoBehaviour
             waypoints[i] = null;
         }
     }
+
 }
