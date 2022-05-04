@@ -30,6 +30,7 @@ public class Plant : MonoBehaviour
     private bool hasBugs = false;
     private float bugChance = 0.05f;
     public GameObject bug;
+    public GameObject bugScene;
 
     private Color red = new Color(0.922f, 0.136f, 0.137f);
     private Color green = new Color(0.137f, 0.922f, 0.137f);
@@ -58,8 +59,14 @@ public class Plant : MonoBehaviour
     private void BugPlant()
     {
         hasBugs = true;
-        Instantiate(bug, this.transform.position + new Vector3(0.25f * Mathf.Cos(Random.Range(0, 2*Mathf.PI)), 0, 0.25f * Mathf.Sin(Random.Range(0, 2 * Mathf.PI))), Quaternion.identity);
+        bugScene = Instantiate(bug, this.transform.position + new Vector3(0.25f * Mathf.Cos(Random.Range(0, 2*Mathf.PI)), 0, 0.25f * Mathf.Sin(Random.Range(0, 2 * Mathf.PI))), Quaternion.identity, this.transform);
         CancelInvoke();
+    }
+
+    public void DebugPlant()
+    {
+        hasBugs = false;
+        Destroy(bugScene);
     }
 
     // Start is called before the first frame update
@@ -113,7 +120,7 @@ public class Plant : MonoBehaviour
 
     public float GetValue()
     {
-        quality = Mathf.Clamp(quality, 0.5f, 1.5f);
+        quality = Mathf.Clamp(quality, 0.75f, 2.0f);
         return Mathf.Ceil(value * quality);
     }
 }

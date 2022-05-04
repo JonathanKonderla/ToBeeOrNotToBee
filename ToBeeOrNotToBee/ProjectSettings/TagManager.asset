@@ -12,6 +12,7 @@ TagManager:
   - steps
   - Bug
   - Weed
+  - BeeLevel
   layers:
   - Default
   - TransparentFX

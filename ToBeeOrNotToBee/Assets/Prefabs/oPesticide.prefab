@@ -100,6 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spraySound: {fileID: 8300000, guid: a457b8e75a0e2ea4e9c56d6caa0c8320, type: 3}
+  isOrganic: 1
+  beeLevel: {fileID: 0}
 --- !u!135 &7081113160219081574
 SphereCollider:
   m_ObjectHideFlags: 0

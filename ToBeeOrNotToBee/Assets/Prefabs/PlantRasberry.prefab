@@ -94,8 +94,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.010000002
-  m_Center: {x: 0, y: 8.824416e-18, z: 0}
+  m_Radius: 0.0020885305
+  m_Center: {x: 3.4924597e-10, y: 0.00010607388, z: -0.0005686663}
 --- !u!1 &943280536
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,6 +463,7 @@ MonoBehaviour:
   growTime: 30
   value: 5
   bug: {fileID: 6853046754376402249, guid: d8433d1959764754bbdd1121e83b361f, type: 3}
+  bugScene: {fileID: 0}
 --- !u!1 &5875049515685424487
 GameObject:
   m_ObjectHideFlags: 0

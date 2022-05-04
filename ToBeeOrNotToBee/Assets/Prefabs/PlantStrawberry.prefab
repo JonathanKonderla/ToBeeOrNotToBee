@@ -575,6 +575,7 @@ MonoBehaviour:
   growTime: 20
   value: 4
   bug: {fileID: 6853046754376402249, guid: d8433d1959764754bbdd1121e83b361f, type: 3}
+  bugScene: {fileID: 0}
 --- !u!1 &5875049515685424487
 GameObject:
   m_ObjectHideFlags: 0

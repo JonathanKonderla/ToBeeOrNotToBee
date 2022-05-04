@@ -18,7 +18,7 @@ public class Patroller : MonoBehaviour
     void Start()
     {
         //transform.LookAt(waypoints[waypointIndex].position);
-        speed = 1;
+        speed = 2;
 
         waypoints = new GameObject[10];
 
@@ -57,13 +57,14 @@ public class Patroller : MonoBehaviour
             //transform.Translate(dir * speed * Time.deltaTime / 10);
             var step = speed * Time.deltaTime/2;
             var rotstep = speed * Time.deltaTime * 4;
-            transform.position = Vector3.MoveTowards(transform.position, waypoints[waypointIndex].transform.position, step);
+            transform.position = Vector3.MoveTowards(transform.position, waypoints[waypointIndex].transform.position + new Vector3(0, height, 0), step);
 
-            Vector3 targetDirection = waypoints[waypointIndex].transform.position - transform.position;
+            Vector3 targetDirection = waypoints[waypointIndex].transform.position + new Vector3(0, height, 0) - transform.position;
             Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, rotstep, 0.0f);
             transform.rotation = Quaternion.LookRotation(newDirection);
 
             float dist = Vector3.Distance(transform.position, waypoints[waypointIndex].transform.position + new Vector3(0, height, 0));
+
             if (dist < 0.05f)
             {
                 if(waypointIndex != 0)
@@ -99,7 +100,7 @@ public class Patroller : MonoBehaviour
     // The bees switch to the next waypoint / plant
     void IncreaseIndex()
     {
-        waypointIndex = Random.Range(0, waypoints.Length);
+        waypointIndex = Random.Range(0, active_plants.Length + 1);
         transform.LookAt(waypoints[waypointIndex].transform.position);
     }
 

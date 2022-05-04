@@ -19,7 +19,7 @@ public class GroupPlot : MonoBehaviour
         if (Random.value < weedChance)
         {
             int weedPlot = Random.Range(0, plots.Length);
-            if (plots[weedPlot].hasWeeds == false)
+            if (plots[weedPlot].hasWeeds == false && plots[weedPlot].canWeed == true)
             {
                 plots[weedPlot].WeedPlot(weedPrefab);
             }

@@ -8,6 +8,7 @@ public class DirtPlot : MonoBehaviour
     public bool isPlowed = false;
     public bool hasWeeds = false;
     public bool hasBugs = false;
+    public bool canWeed = true;
 
     public BeeLevel beeLevel;
 
@@ -20,8 +21,9 @@ public class DirtPlot : MonoBehaviour
     public void WeedPlot(GameObject weed)
     {
         //position random theta
-        Instantiate(weed, this.transform.position + new Vector3(weedRadius * Mathf.Cos(Random.Range(0, 2 * Mathf.PI)), 0, weedRadius * Mathf.Sin(Random.Range(0, 2 * Mathf.PI))), Quaternion.identity);
+        Instantiate(weed, this.transform.position + new Vector3(weedRadius * Mathf.Cos(Random.Range(0, 2 * Mathf.PI)), 0, weedRadius * Mathf.Sin(Random.Range(0, 2 * Mathf.PI))), new Quaternion(0, 0, 0, 0), this.transform);
         hasWeeds = true;
+        canWeed = false;
         if (!isEmpty)
         {
             plant.GetComponent<Plant>().SetHasWeeds(hasWeeds);
@@ -32,10 +34,17 @@ public class DirtPlot : MonoBehaviour
     {
         //position random theta
         hasWeeds = false;
+        StartCoroutine("DeweedTimer");
         if (!isEmpty)
         {
             plant.GetComponent<Plant>().SetHasWeeds(hasWeeds);
         }
+    }
+
+    IEnumerable DeweedTimer()
+    {
+        yield return new WaitForSeconds(20);
+        canWeed = true;
     }
 
 
@@ -49,7 +58,6 @@ public class DirtPlot : MonoBehaviour
             plant.transform.rotation = Quaternion.identity;
             isEmpty = false;
             beeLevel.Increase_Bees();
-            print("bees");
         }
         else if (other.gameObject.CompareTag("Plow"))
         {
@@ -63,12 +71,15 @@ public class DirtPlot : MonoBehaviour
         if (other.gameObject.CompareTag("Fruit"))
         {
             plant = other.gameObject.transform.parent.gameObject;
+            plant.GetComponent<Plant>().DebugPlant();
+            plant.GetComponent<Plant>().timer.gameObject.SetActive(false);
+
             isEmpty = true;
             isPlowed = false;
             GetComponent<MeshRenderer>().material = unplowedMat;
-            plant.GetComponent<Plant>().timer.gameObject.SetActive(false);
+
             beeLevel.Increase_Bees();
-            print("bees");
+
         }
     }
 }
